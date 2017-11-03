@@ -1,0 +1,89 @@
+/*main*/
+.line {
+    width: 100%;
+    height: 9px;
+    background: url("../../img/line.png") no-repeat;
+    margin-bottom: 18px;
+}
+.main-l {
+    width: 180px;
+    height: 530px;
+    border: 1px solid #dddddd;
+    padding-top: 20px;
+    padding-left: 24px;
+}
+
+.main-l ul {
+    margin-bottom: 20px;
+}
+
+.main-l ul h2 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    height: 40px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+.main-l ul li {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 16px;
+}
+
+.main-l ul li a {
+    font-size: 14px;
+    color: #666666;
+}
+
+.main h3{
+	display: inline-block;
+    font-size: 16px;
+    color: #333;
+    margin-left:40px;
+    margin-top: 0;
+}
+
+.main #typeText{
+	margin-left:20px ;
+}
+.main .cause{
+	display: none;
+	margin-left:315px;
+}
+.main .wire1{
+	display: block;
+	height:2px;
+	background:#00AA5C;
+	width:104px;
+	margin-left: 40px;
+}
+.main .wire2{
+	display: block;
+	height:2px;
+	background:#ddd;
+	width:876px;
+}
+
+.LevelBox{
+	width: 712px;
+	margin:44px auto 96px;
+}
+.LevelBox i{
+margin-left:-7px;
+}
+
+.main-r p{
+	margin-left:40px;
+	color:#999;
+	font-size:13px;
+	width: 900px;
+    text-indent:2em;
+    letter-spacing:2px;
+}
+.mafoot{
+	margin-bottom:44px;
+}

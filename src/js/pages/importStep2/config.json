@@ -1,0 +1,13 @@
+{
+  "dependencies": [
+    "src/plugin/jquery/jquery.min.js",
+    "src/plugin/jquery-validation/jquery.validate.js",
+    "src/plugin/jquery-validation/localization/messages_zh.js",
+    "src/plugin/jquery-validation/validateExtend.js",
+    "src/plugin/webuploader/webuploader.min.js",
+    "src/plugin/webuploader/uploadFlieCommon.js",
+    "src/js/commonjs/prompt.js",
+    "src/js/commonjs/loading.js",
+    "src/js/pages/importStep2/*.js"
+  ]
+}

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>找回密码</title>
+    <link rel="stylesheet" href="../src/assets/css/base.css"/>
+    <link rel="stylesheet" href="../src/assets/css/account/findPwd.css"/>
+    <link rel="stylesheet" href="../src/plugin/lib/bootstrap/css/bootstrap.css"/>
+    <script src="../src/plugin/lib/jquery/jquery.min.js"></script>
+    <script src="../src/plugin/lib/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../src/plugin/x/iconfont.css"/>
+     <link rel="stylesheet" href="../src/plugin/iconfont/iconfont.css"/>
+    <script src="../src/js/pages/findPwd/index.js"></script>
+</head>
+<body>
+<!--顶部通栏-->
+<div class="f-top">
+    <div class="w">
+        <div class="f-top-l fl">
+            <a href="index.html">
+                <div class="f-top-f"></div>
+                <div class="f-top-i">返回首页</div>
+            </a>
+        </div>
+        <div class="f-top-r fr">
+            <ul>
+                <li>我的订单 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+                <li class="spacer"></li>
+                <li>个人中心 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+                <li class="spacer"></li>
+                <li>帮助中心 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+                <li class="spacer"></li>
+                <li class="f-top-extend1"><a href="#"></a></li>
+                <li class="f-top-extend2"><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--logo-->
+<div class="logo w">
+    <div class="logo-l">
+        <div class="logo-l1">
+            <a href="index.html"></a>
+
+            <div>找回密码</div>
+        </div>
+        <div class="logo-r">
+            如遇注册问题请拨打：<span>400-008-8122</span>
+        </div>
+    </div>
+</div>
+
+<!--main-->
+<div class="main w">
+    <h3>通过手机号找回密码</h3>
+	
+	<div class="main-head">
+		<ul class="clearfix">
+			<li class="on">
+				<span class="on">1</span>
+				<p class="colorOn">填写手机号并验证</p>
+			</li>
+			<li><span>2</span><p>设置新密码</p></li>
+			<li><span class="iconfont icon-gou"></span><p>完成</p></li>
+		</ul>
+	</div>
+	
+    <form action="">
+        <label>
+            <div class="input-l"><span>*</span> 手机号码：</div>
+            <input type="text" placeholder="请输入11位手机号" id="tel"/>
+            <i class="iconfont icon-gou tel-true"></i>
+            <div class="tel-false"><span class="wrong"></span>请输入11位手机号</div>
+            <div class="tel-verify-w"></div>
+            <div class="tel-verify-r"></div>
+        </label><br/>
+        <label>
+            <div class="input-l"><span>*</span> 图形验证码：</div>
+            <input type="text" maxlength="4" id="patterning" placeholder="请输入图形验证码"/>
+
+            <div class="main-img">
+                <img src="#" alt=""/>
+            </div>
+            <a href="#" class="main-p">
+                看不清？换一张
+            </a>
+            <i class="iconfont icon-gou img-true"></i>
+            <div class="img-false"><span class="wrong"></span>验证码不能为空</div>
+        </label><br/>
+        <label>
+            <div class="input-l"><span>*</span> 短信验证码：</div>
+            <!-- 889337-->
+            <input type="text" readonly="readonly" maxlength="6" class="input-pass" placeholder="请输入短信验证码"/>
+            <div class="main-passage">
+                <button id="btn-passage">免费获取验证码</button>
+            </div>
+            <i class="iconfont icon-gou message-true"></i>
+            <div class="message-false"><span class="wrong"></span>验证码错误</div>
+        </label><br/>
+        
+        <input type="submit" class="sub" value="下一步"/>
+    </form>
+</div>
+<!--底部通栏-->
+<div class="f-bottom w clearfix">
+    <ul>
+        <h2>友情链接</h2>
+        <li><a href="javascript:;">海关通关信息网</a></li>
+        <li><a href="javascript:;">中国进出口服务网</a></li>
+        <li><a href="javascript:;">跨境物流服务网</a></li>
+    </ul>
+    <ul>
+        <h2>关于我们</h2>
+        <li><a href="javascript:;">联系我们</a></li>
+        <li><a href="javascript:;">法律声明</a></li>
+        <li><a href="javascript:;">合作伙伴</a></li>
+    </ul>
+    <ul>
+        <h2>商务合作</h2>
+        <li><a href="javascript:;">服务热线：027-87038323</a></li>
+        <li><a href="javascript:;">企业QQ:403009669</a></li>
+        <li><a href="javascript:;">企业邮箱:pengfengxia@sina.com</a></li>
+        <li><a href="javascript:;">传真号码：027*87038323</a></li>
+    </ul>
+    <ul>
+        <h2>关注我们</h2>
+        <li><span class="QRcode"></span></li>
+    </ul>
+    <ul>
+        <div class="f-tel">
+            <span class="f-phone"></span>
+
+            <div class="f-bottom-info">
+                24小时 <br/>
+                服务热线
+            </div>
+        </div>
+        <p>027-87038323</p>
+    </ul>
+</div>
+<!--bottom-->
+<div class="ff-bottom">
+    <i></i>
+
+    <p>Copyright@&nbsp;版权所有&nbsp;创意科技&nbsp;鄂ICP备10001406号-1&nbsp;鄂公网安备360402020001号</p>
+</div>
+</body>
+</html>

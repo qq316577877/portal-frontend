@@ -1,0 +1,63 @@
+/*main*/
+.main h3{
+	font-size:20px;
+	font-weight: 900;
+	color: #333;
+	margin:40px 0 24px 0 ;
+}
+.main p{
+	font-size: 14px;
+	letter-spacing:3px;
+	color: #666;
+}
+
+.main .main-foot{
+	text-align: center;
+	margin-top: 84px;
+}
+
+
+.main .main-foot .main-foot-c{
+	display: none;
+	margin:0 auto ;
+	border:1px solid #333 ;
+	text-align: center;
+	width:610px ;
+}
+.main .main-foot .main-foot-c h4{
+	font-size:20px;
+	font-weight: 900;
+	color: #333;
+	
+}
+
+
+
+.main .main-foot .main-foot-c p{
+	margin: 10px auto 0;
+	width:540px;
+	color: #FF4848;
+	text-align: left;
+}
+
+.main .main-foot .main-foot-c .pop-up{
+	border-radius:5px ;
+	width:155px;
+	height:30px;
+	border:1px solid #00AA5C ;
+	display: block;
+	margin:30px auto;
+	color: #00AA5C;
+	line-height: 30px;
+}
+
+.main .main-foot #show{
+	width:192px;
+	height:40px;
+	font-size: 16px;
+	background: #00AA5C;
+	color: #fff;
+}
+.main .main-foot #show:hover{
+	background:#10c471;
+}

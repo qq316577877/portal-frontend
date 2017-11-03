@@ -1,0 +1,273 @@
+/*main*/
+
+.main-r {
+	width: 1020px;
+}
+
+.main-r-content .main-head {
+	margin: 0 auto;
+	width: 980px;
+	height: 39px;
+	border-bottom: 2px solid #D5D5D5;
+}
+
+.main-head .top-list {
+	margin-top: 5px;
+}
+
+.main-head .top-list li {
+	cursor:pointer;
+	width: 104px;
+	height: 34px;
+	text-align: center;
+	display: block;
+	float: left;
+	font-size: 16px;
+	font-weight: 900;
+	
+}
+
+.main-head .top-list .active {
+	color: #00AA5C;
+	border-bottom:2px solid #00AA5C;
+}
+
+.main-head .searchBox {
+	position: relative;
+	margin-bottom: 4px;
+}
+
+.main-head .search {
+	padding: 0 0 0 34px;
+	width: 248px;
+	height: 32px;
+	border: 1px solid #ddd;
+}
+
+.main-head .searchBox .icon-search {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: url(../../img/search.png) no-repeat;
+}
+
+.main-head .search-btn {
+	background: #00AA5C;
+	color: #fff;
+	width: 96px;
+	height: 32px;
+}
+
+.main-r-content .thList {
+	border: 1px solid #E8E8E8;
+	background: #F5F5F5;
+	width: 980px;
+	margin: 10px auto 0;
+}
+
+.main-r-content .list li {
+	box-sizing: border-box;
+	line-height: 40px;
+	text-align: center;
+	height: 40px;
+	float: left;
+}
+
+.main-r-content .list li:nth-of-type(1) {
+	width: 88px;
+}
+
+.main-r-content .list li:nth-of-type(2),
+.main-r-content .list li:nth-of-type(3) {
+	width: 160px;
+}
+
+.main-r-content .list li:nth-of-type(4),
+.main-r-content .list li:nth-of-type(6) {
+	width: 104px;
+}
+
+.main-r-content .list li:nth-of-type(5) {
+	width: 134px;
+}
+
+.main-r-content .list li:nth-of-type(7) {
+	width: 120px;
+}
+
+.main-r-content .list li:nth-of-type(8) {
+	width: 107px;
+}
+
+.font1 {
+	color: #666;
+}
+
+.font2 {
+	font-weight: 700;
+	color: #333;
+}
+
+.font3 {
+	color: #00AA5C;
+}
+
+.font4 {
+	font-weight: 700;
+	color: #00AA5C;
+}
+
+.font5 {
+	color: #333;
+}
+
+.font6 {
+	color: #777;
+}
+
+.main-r-content .null-show {
+	width: 980px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.main-r-content .null-show img {
+	margin-top: 72px;
+	margin-bottom: 10px;
+}
+
+.main-r-content .null-show p {
+	font-size: 16px;
+	color: #666;
+}
+
+.main-r-content .have-show {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.main-r-content .have-show .tabBox>li {
+	border-bottom: 1px solid #D5D5D5;
+}
+
+
+/*明细*/
+
+.mask {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: all .5s;
+	background: rgba(0, 0, 0, .4);
+	z-index: 50;
+	display: none;
+}
+
+#inform_2 {
+	width: 710px;
+	z-index: 51;
+	position: absolute;
+	top: 35%;
+	margin-top: -180px;
+	left: 50%;
+	margin-left: -288px;
+	border-radius: 8px;
+}
+
+.inform-head {
+	width: 100%;
+	height: 40px;
+	background: #f2f2f2;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	padding-left: 24px;
+	padding-right: 24px;
+	line-height: 40px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.inform-head span {
+	font-size: 16px;
+	color: #333333;
+	font-weight: bold;
+}
+
+.cancel {
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	line-height: 40px;
+	font-weight: bold;
+}
+
+.cancel:hover {
+	color: #00aa5c;
+	transition: all .5s;
+}
+
+.inform-body {
+	padding: 24px 40px 72px;
+	background: #ffffff;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	font-size: 14px;
+	color: #666;
+}
+
+.inform-body div p,
+.inform-body div time {
+	display: inline-block;
+}
+
+.inform-body div p {
+	width: 88px;
+	text-align: right;
+	margin-right: 8px;
+	margin-bottom: 16px;
+}
+
+.inform-body div .mb0 {
+	margin-bottom: 0;
+}
+
+.inform-body .top-l {
+	margin-right: 140px;
+}
+.inform-body .top-l .getLimit{
+	text-decoration:underline;
+	margin-left:10px;
+	color:#00AA5C;
+	font-size: 12px;
+}
+.inform-body .mid-l {
+	margin-right: 200px;
+}
+
+.inform-body .ft-l {
+	margin-right: 145px;
+}
+
+.inform-body .inform-body-middle {
+	padding-bottom: 40px;
+	border-bottom: 1px dashed #ddd;
+}
+
+.inform-body .inform-body-middle h1 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #555;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 8px;
+	margin-bottom: 20px;
+}
+
+.inform-body .inform-body-foot {
+	padding-top: 16px;
+}
+

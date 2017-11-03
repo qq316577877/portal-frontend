@@ -1,0 +1,6 @@
+{
+  "dependencies": [
+    "src/js/commonjs/loading.js",
+    "src/js/pages/orderQuery/*.js"
+  ]
+}

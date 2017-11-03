@@ -1,0 +1,6 @@
+{
+  "dependencies": [
+    "src/js/commonjs/prompt.js",
+    "src/js/pages/orderReview/*.js"
+  ]
+}

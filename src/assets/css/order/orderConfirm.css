@@ -1,0 +1,208 @@
+/*main*/
+.main {
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    padding-top: 41px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.main-top {
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 40px;
+}
+
+.main-top ul {
+    width: 200px;
+    margin-right: 50px;
+    float: left;
+}
+
+.main-top ul li {
+    float: left;
+}
+
+.main-top ul li a {
+    color: #333333;
+}
+
+.order-detail {
+    display: block;
+    float: left;
+    margin-right: 50px;
+}
+
+.main-center {
+    position: relative;
+}
+
+.order-date .order-detail1 {
+    color: #999999;
+}
+
+.order-detail1 {
+    color: #00aa5c;
+}
+
+.order-No {
+    display: block;
+    float: left;
+    margin-right: 50px;
+}
+
+.order-date {
+    display: block;
+    float: left;
+    margin-right: 50px;
+}
+
+.main-center {
+    padding: 0 62px;
+    position: relative;
+}
+
+.order-type {
+    font-size: 16px;
+    color: #666666;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed #DDDDDD;
+    margin-bottom: 16px;
+}
+
+.main-info {
+    margin-top: 16px;
+    padding: 0 80px;
+}
+
+.main-info .smallHead {
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.head {
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold;
+}
+.main-info .cost{
+    margin-bottom: 20px;
+}
+.main-info .cost>div{
+    display: inline-block;
+    font-size: 14px;
+    color: #555555;
+    margin-right: 40px;
+}
+.main-info .cost #cost_1,
+.main-info .cost #cost_2{
+    margin-left: 8px;
+    width: 128px;
+    display: inline-block;
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+}
+#financial_service table{
+    /*display: inline-block;*/
+    /*width: 100%;*/
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-left: 108px;
+    padding: 16px 40px;
+}
+#financial_service table tr{
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #DDDDDD;
+}
+#financial_service table tr th{
+    display: inline-block;
+}
+#financial_service table tr:nth-of-type(1) th:nth-of-type(1){
+    width: 128px;
+    margin-right: 40px;
+}
+#financial_service table tr:nth-of-type(1) th:nth-of-type(2){
+    width: 120px;
+    margin-right: 40px;
+}
+#financial_service table tr:nth-of-type(1) th:nth-of-type(3){
+    width: 72px;
+    margin-right: 40px;
+}
+#financial_service table tr:nth-of-type(1) th:nth-of-type(4){
+    width: 114px;
+    margin-right: 40px;
+}
+#financial_service table tr:nth-of-type(1) th:nth-of-type(5){
+    width: 96px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

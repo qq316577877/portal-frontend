@@ -1,0 +1,7 @@
+{
+  "dependencies": [
+    "src/js/mods/url/index.js",
+    "src/js/pages/findPwdReset/index.js",
+    "src/js/commonjs/prompt.js"
+  ]
+}

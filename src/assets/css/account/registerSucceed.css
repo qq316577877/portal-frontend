@@ -1,0 +1,44 @@
+/*main*/
+.main {
+    height: 702px;
+    /*width: 100%;*/
+    border: 1px solid #ddd;
+}
+.main .main-head{text-align: center;text-align: center;margin:36px 0 32px 0 ;}
+.main .main-head .smiling-face{display:inline-block;width:40px;height:40px;background: url(../../img/smile.png);margin:0 8px 0 0 ;vertical-align:middle;}
+.main .main-head .congratulation{display: inline-block; font-size: 18px;color:#333;}
+
+.main .main-content{text-align: center;margin-bottom: 40px;}
+.main .main-content .portrait{width:64px;height: 64px;background: url(../../img/regSucceed-1.png);display: inline-block;margin-bottom:16px;}
+.main .main-content .account{color:#555;margin-bottom: 38px;}
+.main .main-content .account .Tel-color{color:#00aa5c;}
+.main .main-content .main-content-btn{margin-bottom:20px;}
+.main .main-content .btn-w{
+display: inline-block;
+    border-radius: 5px;
+    padding: 12px 50px;
+}
+
+
+.green{background:#00AA5C;color:#fff ;margin-right:60px;}
+.green:hover{background:#10c471;color:#fff;}
+.white{background:#fff;color:#00AA5C;border:1px solid #00AA5C ;}
+.white:hover{background:rgba(16,196,113,0.1);color:#10C471;border:1px solid #10C471;}
+
+.main .main-content .hint{font-size: 12px;color:#666;margin-bottom:100px;}
+.main .main-content .hint mark{color: #ff4848;font-weight: 700;
+    background: #fff;}
+
+.main .main-content .line{display: inline-block;width: 300px;height:1px;border-bottom:1px dashed #00AA5C;vertical-align:middle;margin-top:-6px ;}
+.main .main-content .why{display: inline-block;margin:0 20px;color:#00AA5C;}
+
+.main .main-foot{width: 100%;}
+.main .main-foot .pictureBox {width: 800px;margin: 0 auto;}
+.main .main-foot .pictureBox li{float: left;width:200px;text-align: center;}
+.main .main-foot li .state{font-size: 14px;color:#555; margin-top:10px ;}
+.main .main-foot .cause{display: inline-block;width:80px;height: 80px;}
+
+.picture1{background: url(../../img/regSucceed-2.png);}
+.picture2{background: url(../../img/regSucceed-3.png);}
+.picture3{background: url(../../img/regSucceed-4.png);}
+.picture4{background: url(../../img/regSucceed-5.png);}

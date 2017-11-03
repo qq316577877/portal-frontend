@@ -1,0 +1,11 @@
+{
+  "dependencies": [
+    "src/plugin/jquery/jquery.min.js",
+    "src/plugin/jquery-validation/jquery.validate.js",
+    "src/plugin/jquery-validation/localization/messages_zh.js",
+    "src/plugin/jquery-validation/validateExtend.js",
+    "src/js/mods/url/index.js",
+    "src/js/commonjs/loading.js",
+    "src/js/pages/register/*.js"
+  ]
+}

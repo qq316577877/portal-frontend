@@ -1,0 +1,58 @@
+.main{
+	width:1200px;
+	margin:5% auto 0;
+	text-align: center;
+}
+.main h1{
+	color: #444;
+	font-size:24px;
+	font-weight: 600;
+	margin-top: 56px;
+}
+.main p{
+	font-size: 16px;
+	color: #666;
+	margin-top: 20px;
+	margin-bottom: 44px;
+}
+
+.main .btn-box a{
+	display: inline-block;
+	width:109px;
+	height:32px;
+	font-size:12px;
+	border-radius:20px; 
+	line-height:34px;
+}
+.main .btn-box .home{
+	background:#00AA5C;
+	color: #fff;
+	margin-right: 66px; 
+	
+}
+.main .btn-box .go-back{
+	border:1px solid #00AA5C;
+	color: #444;
+	
+}
+
+.main .btn-box i{
+	display:inline-block ;
+	 width: 20px;
+    height: 20px;
+	vertical-align: middle;
+	margin-right:8px;
+}
+
+.main .btn-box .home i{
+ 	background: url(../../img/home.png) no-repeat; 
+
+}
+.main .btn-box .go-back i{
+    background: url(../../img/back.png) no-repeat;
+}
+
+.main-404 h1,.main-500 h1,.main-400 h1{
+	margin-top: 38px;
+	margin-bottom: 32px;
+}

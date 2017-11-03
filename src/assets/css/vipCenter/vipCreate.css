@@ -1,0 +1,40 @@
+.main-info6 h3{
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    margin-left: -140px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 25px;
+}
+.main-info6 .create-info{
+    padding-bottom: 0;
+    height: 100%;
+    margin: 0 auto;
+    margin-left: 125px;
+}
+.main-info6 .create-info p{
+    display: block;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #656565;
+}
+.main-info6  a{
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 192px;
+    height: 40px;
+    background: #00aa5c;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-left: 250px;
+}
+
+#order_create:hover{
+    transition: all .5s;
+    background: #10c471;
+}
+

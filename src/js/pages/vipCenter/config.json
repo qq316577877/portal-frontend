@@ -1,0 +1,10 @@
+{
+  "dependencies": [
+    "src/plugin/jquery/jquery.min.js",
+    "src/plugin/jquery-validation/jquery.validate.js",
+    "src/plugin/jquery-validation/localization/messages_zh.js",
+    "src/plugin/jquery-validation/validateExtend.js",
+    "src/js/commonjs/prompt.js",
+    "src/js/pages/vipCenter/*.js"
+  ]
+}

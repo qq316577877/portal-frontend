@@ -1,0 +1,235 @@
+/*main*/
+.main{
+    /*max-width: 1900px;*/
+    /*min-width:1700px;*/
+    height: 570px;
+    margin: 0 auto;
+    background: url("../../img/main.jpg") no-repeat -225px;
+    position: relative;
+}
+.status{
+    width: 374px;
+    height: 434px;
+    background: #ffffff;
+    box-shadow: 0px 0px 0px 10px rgba(255,255,255,.3);
+    position: absolute;
+    top: 58px;
+    right: 175px;
+}
+.status h2{
+    font-size: 18px;
+    color: #00aa5c;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+}
+.usename{
+    width: 324px;
+    height: 40px;
+    margin-top: 32px;
+    text-align: center;
+
+}
+.usename .formlabel{
+    width: 324px;
+    font-weight: normal;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.usename .formlabel label {
+    position: absolute;
+    left: 38px;
+    top: 42px;
+    color: #ff4848;
+    font-weight: 100;
+    font-size: 14px;
+}
+.usename-icon{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #9d9d9d;
+    border-right: none;
+    float: left;
+}
+form>div i{
+    font-size: 18px;
+    color: #666666;
+    text-align: center;
+    line-height: 40px;
+}
+.usename1{
+    display: inline-block;
+    width: 284px;
+    height: 40px;
+    float: left;
+    border: 1px solid #9d9d9d;
+
+    padding-left: 8px;
+}
+input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #bbbbbb;
+    font-weight: normal;
+}
+.remember{
+    width: 324px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 220px;
+    margin-left: -162px;
+    padding-top: 8px;
+}
+.checkbox{
+    font-size: 13px;
+    float: left;
+}
+.remember-l span{
+    display: inline-block;
+    font-size: 14px;
+    color: #666666;
+    float: left;
+    margin-left: 8px;
+}
+.remember-r{
+    font-size: 14px;
+    color: #666666;
+}
+.remember-r:hover{
+    color: #00aa5c;
+    text-decoration: underline;
+    padding-bottom: 1px;
+}
+.login{
+    width: 324px;
+    height: 40px;
+    font-size: 16px;
+    color: #ffffff;
+    background: #00aa5c;
+    position: absolute;
+    bottom: 96px;
+    left: 50%;
+    margin-left: -162px;
+    border-radius: 5px;
+}
+.login:hover{
+    background: #10c471;
+}
+.login:active {
+    background: #f2f2f2;
+    color: #999999;
+}
+
+.register-in{
+    position: absolute;
+    bottom: 24px;
+    right: 25px;
+}
+.register-in .register-in1{
+    font-size: 20px;
+    /*vertical-align: middle;*/
+    color: #10c471;
+}
+.register-in a{
+    font-size: 14px;
+    color: #10c471;
+}
+.register-in2:hover{
+    color: #00aa5c;
+    text-decoration: underline;
+}
+
+.focus{
+    border-color: #00aa5c;
+    color: #00aa5c;
+}
+.focus-f{
+    border-color: #ff4848;
+    color: #ff4848;
+}
+
+
+/*错误提示消息*/
+.tel-false {
+    position: absolute;
+    top: 130px;
+    color: #ff4848;
+    display: none;
+}
+.pwd-false{
+    position: absolute;
+    color: #ff4848;
+    top: 205px;
+    display: none;
+}
+.pwd-false-1{
+    position: absolute;
+    color: #ff4848;
+    top: 105px;
+    display: none;
+}
+.wrong {
+    width: 16px;
+    height: 16px;
+    background: url("../../img/sprite.png") no-repeat -2px -127px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.usename>label:nth-of-type(2) .yonghu {
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+/*main*/
+
+.main {
+	margin-top: 24px;
+	border: 1px solid #ddd;
+}
+
+.main-r-show{
+	text-align:center;
+	padding:48px 0 95px 0 ;
+}
+
+.main-r-show .inform{
+	line-height:25px ;
+	display: inline-block;
+	width:455px;
+	color: #666;
+}
+
+
+.main-r-show img{
+	height: 68px;
+	margin-bottom:24px;
+}
+.main-r-show .hint{
+	font-size:20px;color:#333;
+}
+.main-r-show .approve{
+	margin-top: 80px;
+	line-height:40px;
+	display: inline-block;
+	width: 128px;
+	height: 40px;
+	border:1px solid #00AA5C;
+	background:#fff;
+	font-size:16px;
+	color:#00AA5C;
+	border-radius:5px ;
+}
+
+.main-r-show .approve:hover{
+	border:1px solid #10C471;
+	background:rgba(16,196,113,0.1);
+}
+

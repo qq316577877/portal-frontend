@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>会员认证</title>
+	<link rel="stylesheet" href="../src/assets/css/base.css"/>
+	<link rel="stylesheet" href="../src/assets/css/account/PersonageAndcompany.css"/>
+	<link rel="stylesheet" href="../src/assets/css/account/animate.min.css" />
+    <link rel="stylesheet" href="../src/plugin/lib/bootstrap/css/bootstrap.css"/>
+    <script src="../src/plugin/lib/jquery/jquery.min.js"></script>
+    <script src="../src/plugin/lib/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../src/plugin/x/iconfont.css"/>
+     <link rel="stylesheet" href="../src/plugin/iconfont/iconfont.css"/>
+    <script src="../src/js/pages/vipPersonage/index.js"></script>
+    
+		 <!--<script type="text/javascript" src="../src/js/lib/webuploader/webuploader.min.js"></script>
+	<script type="text/javascript" src="../src/js/lib/webuploader/upload.js"></script>
+	<script src="../src/js/pages/vipCompany/upflie.js" type="text/javascript" charset="utf-8"></script>	-->
+
+		 
+		
+	</head>
+
+	<body>
+		<!--顶部通栏-->
+		<div class="f-top">
+			<div class="w">
+				<div class="f-top-l fl">
+					<a href="index.html">
+						<div class="f-top-f"></div>
+						<div class="f-top-i">返回首页</div>
+					</a>
+				</div>
+				<div class="f-top-r fr">
+					<ul>
+						<li>我的订单 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+						<li class="spacer"></li>
+						<li>个人中心 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+						<li class="spacer"></li>
+						<li>帮助中心 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+						<li class="spacer"></li>
+						<li class="f-top-extend1">
+							<a href="#"></a>
+						</li>
+						<li class="f-top-extend2">
+							<a href="#"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--logo-->
+		<div class="logo w">
+			<div class="logo-l">
+				<div class="logo-l1">
+					<a href="index.html"></a>
+
+					<div>会员认证</div>
+				</div>
+				<div class="logo-r">
+					如遇注册问题请拨打：<span>400-008-8122</span>
+				</div>
+			</div>
+		</div>
+		<!--main-->
+		<div class="main w">
+			<h3>会员认证</h3>
+
+			<form action="">
+				<label>
+    		 <div class="input-l"><span>*</span> 会员类型：</div>
+            	<div class="memEntBOX">
+            		<input type="radio" name="mORe" value="2"  />企业
+            	</div>
+            	<div class="memEntBOX">
+            		 <input type="radio" name="mORe" value="1" checked/>个人
+            	</div>
+    	</label>
+
+				<div class="vcBox ">
+
+					<div class="vORc personage">
+						<label>
+            <div class="input-l"><span>*</span> 姓名：</div>
+            <input type="text" id="per-name" maxlength="25"/>
+             <p class="red judge"></p>
+        </label><br/>
+
+						<label>
+            <div class="input-l"><span>*</span> 身份证号：</div>
+            <input type="text" id="per-identity" placeholder="个人居民身份证号" maxlength="18"/>
+			 <p class="red judge"></p>
+        </label><br/>
+
+						<label>
+            <div class="input-l"><span>*</span> 所在地区 ：</div>
+             <div class="selectList">
+	          	<select class="country"></select>
+           		<select class="province"><option>请选择省</option></select>
+            	<select class="city"><option>请选择市</option></select>
+            	<select class="district mr0"><option>请选择区</option></select>
+          		 <p class="red judge"></p>
+             </div>
+           
+         </label><br/>
+						<label>
+            <div class="input-l"><span>*</span> 详细地址：</div>
+            <input type="text"  id="per-address" maxlength="120"/>
+             <p class="red judge"></p>
+        </label><br/>
+						<label>
+            <div class="input-l"><span>*</span> 联系电话：</div>
+            <input type="text" id="per-phoneNum" maxlength="20"/>
+             <p class="red judge"></p>
+        </label><br/>
+
+						<label>
+            <div class="input-l"><span>*</span> 上传证件照片：</div>
+           
+           <div class="uploadingBox">
+           		 <div class="image-upload mb mr">
+            	 <p class="warning red">上传业务合同或凭证</p>
+            	<div class="imgBox">
+            		<div class="filePicker">
+						<img class="showImg" id="attachmentOne" src="../src/assets/img/shangchuanttubiao.png" />
+							<p class="uploading">图片上传</p>
+					</div>
+					<p class="red judge"></p>
+            	</div>
+            	
+            </div>
+             <div class="image-upload">
+            	<div class="imgBox mt">
+            		<div class="filePicker">
+						<img class="showImg" id="attachmentTwo" src="../src/assets/img/shangchuanttubiao.png" />
+							<p class="uploading">图片上传</p>
+					</div>
+					<p class="red judge"></p>
+            	</div>
+            </div>
+         </div>   
+      </label><br/>
+						<label>
+            <div class="input-l"></div>
+           		<div class="image-upload mr">
+            	 <p class="warning">法人身份证正面</p>
+            	<div class="imgBox">
+            		<div class="filePicker">
+						<img class="showImg" id="identityFront" src="../src/assets/img/shangchuanttubiao.png" />
+							<p class="uploading">图片上传</p>
+					</div>
+					<p class="red judge"></p>
+            	</div>
+            	
+            </div>
+            <div class="image-upload">
+            	 <p class="warning">法人身份证反面</p>
+            	<div class="imgBox">
+            		<div class="filePicker">
+						<img class="showImg" id="identityBack" src="../src/assets/img/shangchuanttubiao.png" />
+							<p class="uploading">图片上传</p>
+					</div>
+					<p class="red judge"></p>
+            	</div>
+            
+            </div>
+        </div>
+    	</div>
+    	
+        
+         
+         
+         	<p class="hint"><span>温馨提示：</span>证照仅支持3MB一下的jpg、gif、png、pdf、jpeg格式的图片或文件</p>
+         
+      </label><br/>
+
+						<!-- <input type="submit" class="sub" value="提交认证"/>-->
+						<a href="###" class="sub">提交认证</a>
+			</form>
+			</div>
+			<!--底部通栏-->
+			<div class="f-bottom w clearfix">
+				<ul>
+					<h2>友情链接</h2>
+					<li>
+						<a href="javascript:;">海关通关信息网</a>
+					</li>
+					<li>
+						<a href="javascript:;">中国进出口服务网</a>
+					</li>
+					<li>
+						<a href="javascript:;">跨境物流服务网</a>
+					</li>
+				</ul>
+				<ul>
+					<h2>关于我们</h2>
+					<li>
+						<a href="javascript:;">联系我们</a>
+					</li>
+					<li>
+						<a href="javascript:;">法律声明</a>
+					</li>
+					<li>
+						<a href="javascript:;">合作伙伴</a>
+					</li>
+				</ul>
+				<ul>
+					<h2>商务合作</h2>
+					<li>
+						<a href="javascript:;">服务热线：027-87038323</a>
+					</li>
+					<li>
+						<a href="javascript:;">企业QQ:403009669</a>
+					</li>
+					<li>
+						<a href="javascript:;">企业邮箱:pengfengxia@sina.com</a>
+					</li>
+					<li>
+						<a href="javascript:;">传真号码：027*87038323</a>
+					</li>
+				</ul>
+				<ul>
+					<h2>关注我们</h2>
+					<li><span class="QRcode"></span></li>
+				</ul>
+				<ul>
+					<div class="f-tel">
+						<span class="f-phone"></span>
+
+						<div class="f-bottom-info">
+							24小时 <br/> 服务热线
+						</div>
+					</div>
+					<p>027-87038323</p>
+				</ul>
+			</div>
+			<!--bottom-->
+			<div class="ff-bottom">
+				<i></i>
+
+				<p>Copyright@&nbsp;版权所有&nbsp;创意科技&nbsp;鄂ICP备10001406号-1&nbsp;鄂公网安备360402020001号</p>
+			</div>
+	</body>
+
+</html>

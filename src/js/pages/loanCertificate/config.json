@@ -1,0 +1,9 @@
+{
+  "dependencies": [
+    "src/js/commonjs/loading.js",
+    "src/plugin/webuploader/webuploader.min.js",
+    "src/plugin/webuploader/uploadFlieCommon.js",
+    "src/js/pages/loanCertificate/index.js",
+    "src/js/plugin/web/index.js"
+  ]
+}

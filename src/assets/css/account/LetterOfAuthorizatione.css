@@ -1,0 +1,56 @@
+#Box{
+	padding:0px;
+	background: #ddd;
+	font-weight: 600;
+	
+}
+#main{
+	color: #000000;
+	width:100%;
+	width: 620px;
+	margin:0 auto;
+}
+#main i{
+	 font-style:normal
+}
+#main h1{
+	padding-top:15px;
+	font-size:25px ;
+	text-align: center;
+}
+#main p{
+	line-height:25px;
+	margin: 0;
+}
+#main .p1{
+	text-indent:2em; 
+	width: 515px;
+}
+#main .p2{
+	width: 515px;
+	font-weight: 100;
+	text-indent:2em; 
+}
+#main .p3{
+	width: 515px;
+	font-weight: 100;
+	margin-top: 35px;
+	margin-left:40%; 
+}
+#main .p4{
+	width: 515px;
+	font-weight: 100;
+	margin-left:43%; 
+}
+#main .p5{
+	width: 515px;
+	font-weight: 100;
+	margin-left:44%; 
+}
+#main #time{
+	margin:35px 0 0 70% ;
+	font-weight: 100;
+}
+.red{
+	color:red ;
+}

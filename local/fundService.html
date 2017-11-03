@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>资金服务</title>
+	<link rel="stylesheet" href="../src/assets/css/home/indexBase.css"/>
+	<link rel="stylesheet" href="../src/assets/css/account/TreasuryServices.css"/>
+	<link rel="stylesheet" href="../src/assets/css/account/animate.min.css" />
+    <link rel="stylesheet" href="../src/plugin/lib/bootstrap/css/bootstrap.css"/>
+    <script src="../src/plugin/lib/jquery/jquery.min.js"></script>
+    <script src="../src/plugin/lib/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../src/plugin/x/iconfont.css"/>
+    <link rel="stylesheet" href="../src/plugin/iconfont/iconfont.css"/>
+	<script src="../src/js/pages/fundService/index.js"></script>
+	
+	</head>
+
+	<body>
+		<!--顶部通栏-->
+		<div class="f-top">
+			<div class="w">
+				<div class="f-top-l fl">
+					<div class="f-top-i">欢迎来到创意科技</div>
+
+				</div>
+				<div class="f-top-r fr">
+					<ul>
+						<li>我的订单 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+						<li class="spacer"></li>
+						<li>个人中心 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+						<li class="spacer"></li>
+						<li>帮助中心 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+						<li class="spacer"></li>
+						<li class="f-top-extend1">
+							<a href="#"></a>
+						</li>
+						<li class="f-top-extend2">
+							<a href="#"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--logo-->
+
+		<div class="logoBox">
+			<div class="logo-top">
+				<div class="logo w">
+					<div class="logo-l">
+						<div class="logo-l1">
+							<a href="index.html"></a>
+
+						</div>
+						<div class="logo-r clearfix">
+							<ul class="index-nav fl">
+								<li>
+									<a href="">首页</a>
+								</li>
+								<li>
+									<a href="">进口服务</a>
+								</li>
+								<li>
+									<a href="">物流服务</a>
+								</li>
+								<li>
+									<a href="" >通关服务</a>
+								</li>
+								<li>
+									<a href="" class="on">资金服务</a>
+								</li>
+								<li>
+									<a href="">会员中心</a>
+								</li>
+								<li>
+									<a href="">新闻中心</a>
+								</li>
+							</ul>
+							<div class="show-h fl">
+								<a href="" class="fl">登录</a>
+								<a href="" class="fl">注册</a>
+							</div>
+							<div class="show-h fl">
+								<a href="" class="immediately">立即下单</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="imgBox">
+				<img src="../src/assets/img/T-EIndex.jpg" />
+			</div>
+
+		</div>
+
+		<!--main-->
+		<div class="main">
+			<div class="main-content">
+				<div class="main-top">
+					<h3>资金服务</h3>
+					
+					<p> 创意科技联合九江银行，致力于打造全国一流的农产品供应链金融服务，让您采购途中的货物直接转变为流动资金，降低您的资金压力，以更少的资金，做更大的生意，最高授信额度可达1000万元。</p>
+					<p>申请资金服务后会有银行工作人员上门一对一帮您办理贷款相关手续，方便快捷高效率，您再也不需要为资金问题而东奔西跑。</p>
+					<h3>1.什么时候放款？能放款多少？</h3>
+					<p>申请资金服务并获得授信额度后，只要您在下单时候勾选资金服务；货物一旦从工厂发货，九江银行立刻将贷款放款至您的账户，最高可贷该笔货柜总价值的70%。</p>
+					<h3>2.什么时候还款？</h3>
+					<p>货物到达国内后，我们会短信通知您货物到达目的地的时具体时间，您只需在货物到达目的地的前一天把钱存在还款账户即可。</p>
+					<h3>3.收费标准</h3>
+					<p>所有贷款均按照您实际使用天数计息，利息按照年化利率10%收取。另外，平台收取本金0.5%平台服务费，先实行优惠费率，仅收取0.1%的平台服务费</p>
+					<h3>4.什么时候收费</h3>		
+					<p>贷款本息将在货物到达目的地的前一天收取，还款时统一收取。平台服务费将在放款是直接扣划。</p>
+				</div>
+				
+					<div class="btnBOx">
+						<button id="apply-for" class="btn">立即申请贷款</button>
+						<button id="calculate" class="btn">贷款计算器</button>
+					</div>
+					
+	
+			</div>
+
+		</div>
+			
+	<!--计算器-->
+	<div class="mask">
+	
+	<div class="inform" id="inform_2">
+        <div class="inform-head">
+            <span class="fl">贷款计算器</span>
+            <i class="iconfont icon-chacha cancel fr" id="cancel"></i>
+        </div>
+        <div class="inform-body">
+            <label for="">
+                <span>借多少</span>
+                <input type="text" maxlength="10" id="money_loan"/>
+                <span>元</span>
+            </label>
+            <span id="empty">请输入正整数</span>
+            <label for="">
+                <span>借多久</span>
+                <input type="text" maxlength="10" id="money-day"/>
+                <span>天</span>
+            </label>
+            <span id="wrong-day">钱数不能为空</span>
+            <label for="">
+                <span>怎么还</span>
+                <select name="" id="">
+                    <option value="">
+                        到期还本付息
+                    </option>
+                </select>
+            </label>
+
+            <p>月利率&nbsp;0.83% &nbsp;&nbsp; 服务费&nbsp;0.1%</p>
+
+            <div class="btn-ca">
+                <button id="btn_1">计算</button>
+                <button id="btn_2">重置</button>
+            </div>
+            <h4>还款详情</h4>
+
+            <div class="loan-details">
+                <div>到期还本金</div>
+                <div>借满10天总利息</div>
+                <div>借款服务费</div>
+            </div>
+        </div>
+
+    </div>
+   </div>   
+		<!--底部通栏-->
+		<div class="f-Box">
+			<div class="f-bottom w clearfix">
+				<ul>
+					<h2>友情链接</h2>
+					<li>
+						<a href="javascript:;">海关通关信息网</a>
+					</li>
+					<li>
+						<a href="javascript:;">中国进出口服务网</a>
+					</li>
+					<li>
+						<a href="javascript:;">跨境物流服务网</a>
+					</li>
+				</ul>
+				<ul>
+					<h2>关于我们</h2>
+					<li>
+						<a href="javascript:;">联系我们</a>
+					</li>
+					<li>
+						<a href="javascript:;">法律声明</a>
+					</li>
+					<li>
+						<a href="javascript:;">合作伙伴</a>
+					</li>
+				</ul>
+				<ul>
+					<h2>商务合作</h2>
+					<li>
+						<a href="javascript:;">服务热线：027-87038323</a>
+					</li>
+					<li>
+						<a href="javascript:;">企业QQ:403009669</a>
+					</li>
+					<li>
+						<a href="javascript:;">企业邮箱:pengfengxia@sina.com</a>
+					</li>
+					<li>
+						<a href="javascript:;">传真号码：027-87038323</a>
+					</li>
+				</ul>
+				<ul>
+					<h2>关注我们</h2>
+					<li><span class="QRcode"></span></li>
+				</ul>
+				<ul>
+					<div class="f-tel">
+						<span class="f-phone"></span>
+
+						<div class="f-bottom-info">
+							24小时 <br/> 服务热线
+						</div>
+					</div>
+					<em class="red">027-87038323</em>
+				</ul>
+			</div>
+			<!--bottom-->
+			<div class="ff-bottom">
+				<i></i>
+
+				<em>Copyright@&nbsp;版权所有&nbsp;创意科技&nbsp;鄂ICP备10001406号-1&nbsp;鄂公网安备360402020001号</em>
+			</div>
+		</div>
+
+	</body>
+
+</html>

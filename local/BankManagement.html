@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员中心</title>
+    <link rel="stylesheet" href="../src/assets/css/base.css"/>
+    <link rel="stylesheet" href="../src/assets/css/account/bankingManagement.css"/>
+    <link rel="stylesheet" href="../src/plugin/lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../src/assets/css/account/animate.min.css"/>
+    <script src="../src/plugin/lib/jquery/jquery.min.js"></script>
+    <script src="../src/plugin/lib/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../src/plugin/x/iconfont.css"/>
+    <script src="../src/js/pages/bacnkingManagement/index.js"></script>
+    <script src="../src/js/pages/bacnkingManagement/country.js"></script>
+</head>
+<body>
+<!--顶部通栏-->
+<div class="f-top">
+    <div class="w">
+        <div class="f-top-l fl">
+            <a href="index.html">
+                <div class="f-top-f"></div>
+                <div class="f-top-i">返回首页</div>
+            </a>
+        </div>
+        <div class="f-top-r fr">
+            <ul>
+                <li>我的订单 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+                <li class="spacer"></li>
+                <li>个人中心 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+                <li class="spacer"></li>
+                <li>帮助中心 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+                <li class="spacer"></li>
+                <li class="f-top-extend1"><a href="#"></a></li>
+                <li class="f-top-extend2"><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--logo-->
+<div class="logo w">
+    <div class="logo-l">
+        <div class="logo-l1">
+            <a href="index.html"></a>
+
+            <div>会员中心</div>
+        </div>
+        <div class="logo-r">
+            如遇注册问题请拨打：<span>400-008-8122</span>
+        </div>
+    </div>
+</div>
+<!--main-->
+<div class="line"></div>
+<div class="main w clearfix">
+    <div class="main-l fl">
+        <ul>
+            <h2>我的订单</h2>
+            <li><a href="#">进口下单</a></li>
+            <li><a href="#">订单查询</a></li>
+        </ul>
+        <ul>
+            <h2>我的资金服务</h2>
+            <li><a href="#">我的授信额度</a></li>
+            <li><a href="#">我的服务记录</a></li>
+        </ul>
+        <ul>
+            <h2>我的供应商</h2>
+            <li><a href="#">供应商</a></li>
+        </ul>
+        <ul>
+            <h2>账户信息</h2>
+            <li><a href="#">账户信息与安全</a></li>
+            <li><a href="#">会员认证</a></li>
+            <li><a href="#" class="on">银行账户管理</a></li>
+            <li><a href="#">收货地址管理</a></li>
+        </ul>
+    </div>
+    <div class="main-r fl">
+        <div class="main-r-show">
+      		<img src="../src/assets/img/bankingManagement.png"/>
+      		<p class="hint">您还没有添加银行账号哦&nbsp;!</p>
+      		<button class="add-ship-site pop-up">新增银行账号</button>
+        </div>
+        
+        
+        <div class="main-r-hide">
+        	<div class="addBox">
+        		<button class="addSite pop-up">新增银行卡账号</button>
+        		<p class="tell">您已创建<i class="gree">2</i>个银行账号</p>
+        	</div>
+        </div>
+        
+        <ul id="lists">
+        	
+         </ul>
+        
+       
+    </div>
+</div>
+<!--mask-->
+<div class="mask">
+    <div class="inform">
+        <div class="inform-head">
+            <span class="fl">新增银行账号</span>
+            <i class="iconfont icon-chacha cancel fr"></i>
+        </div>
+        <div class="inform-body">
+        <div class="lab">
+            <div class="input-l">开户名称：</div>
+            <input  placeholder="开户名称"  maxlength="30" id="accountName" class="txt" type="text" />
+             <p class="red judge"></p>
+        </div>
+         <div class="lab">
+            <div class="input-l">开户银行：</div>
+            <select class="bankType" id="bankTypeId">
+            	<option value="0">请选择</option>
+            </select>
+            <p class="red judge"></p>
+        </div>
+        	
+         <div class="lab">
+            <div class="input-l minusml15">开户所在地：</div>
+             <div class="selectList">
+	          	<select class="province"><option value="0">请选择省</option></select>
+            	<select class="city"><option value="0">请选择市</option></select>
+            	<select class="district"><option value="0">请选择区</option></select>
+           </div>
+            <p class="red judge"></p>
+        </div>
+        
+        <div class="lab">
+            <div class="input-l">开户支行：</div>
+            <input  p="111" maxlength="25" id="bankName" class="txt" type="text" />
+             <p class="red judge"></p>
+        </div>
+        
+        <div class="lab">
+            <div class="input-l">银行账号：</div>
+            <input maxlength="20" id="bankCard" class="txt" type="text" />
+             <p class="red judge"></p>
+        </div>
+   		 <button class="save">保存</button>
+         <input type="text" class="hide-input"/>
+        </div>
+    </div>
+    <!--删除地址-->
+    <div class="inform-1">
+        <div class="inform-head">
+            <span class="fl">删除收货地址</span>
+            <i class="iconfont icon-chacha cancel fr"></i>
+        </div>
+        <div class="inform-body">
+         	<div><i class="warning-sign">!</i>确定删除改收货地址</div>
+         	<button class="mr35 shutOut-true">确定</button> <button class="out">取消</button>
+         <input type="text" class="hide-input"/>
+        </div>
+    </div>
+    
+    
+
+    
+    
+    
+    
+</div>
+<!--底部通栏-->
+<div class="f-bottom w clearfix">
+    <ul>
+        <h2>友情链接</h2>
+        <li><a href="javascript:;">海关通关信息网</a></li>
+        <li><a href="javascript:;">中国进出口服务网</a></li>
+        <li><a href="javascript:;">跨境物流服务网</a></li>
+    </ul>
+    <ul>
+        <h2>关于我们</h2>
+        <li><a href="javascript:;">联系我们</a></li>
+        <li><a href="javascript:;">法律声明</a></li>
+        <li><a href="javascript:;">合作伙伴</a></li>
+    </ul>
+    <ul>
+        <h2>商务合作</h2>
+        <li><a href="javascript:;">服务热线：027-87038323</a></li>
+        <li><a href="javascript:;">企业QQ:403009669</a></li>
+        <li><a href="javascript:;">企业邮箱:pengfengxia@sina.com</a></li>
+        <li><a href="javascript:;">传真号码：027-87038323</a></li>
+    </ul>
+    <ul>
+        <h2>关注我们</h2>
+        <li><span class="QRcode"></span></li>
+    </ul>
+    <ul>
+        <div class="f-tel">
+            <span class="f-phone"></span>
+
+            <div class="f-bottom-info">
+                24小时 <br/>
+                服务热线
+            </div>
+        </div>
+        <p>027-87038323</p>
+    </ul>
+</div>
+<!--bottom-->
+<div class="ff-bottom">
+    <i></i>
+
+    <p>Copyright@&nbsp;版权所有&nbsp;创意科技&nbsp;鄂ICP备10001406号-1&nbsp;鄂公网安备360402020001号</p>
+</div>
+</body>
+</html>

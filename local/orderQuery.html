@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员中心</title>
+    <link rel="stylesheet" href="../src/assets/css/base.css"/>
+    <link rel="stylesheet" href="../src/assets/vipCenter/vipCenter.css"/>
+    <link rel="stylesheet" href="../src/plugin/lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../src/assets/css/order/orderQuery.css"/>
+    <link rel="stylesheet" href="../src/plugin/incon-order/iconfont.css"/>
+    <script src="../src/plugin/lib/jquery/jquery.min.js"></script>
+    <script src="../src/plugin/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../src/js/pages/orderQuery/laydate.dev.js"></script>
+    <script src="../src/plugin/lib/page.js"></script>
+    <link rel="stylesheet" href="../src/plugin/x/iconfont.css"/>
+    <link rel="stylesheet" href="../src/plugin/iconfont-cancel/iconfont.css"/>
+
+</head>
+<body>
+<!--顶部通栏-->
+<div class="f-top">
+    <div class="w">
+        <div class="f-top-l fl">
+            <a href="index.html">
+                <div class="f-top-f"></div>
+                <div class="f-top-i">返回首页</div>
+            </a>
+        </div>
+        <div class="f-top-r fr">
+            <ul>
+                <li>我的订单 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+                <li class="spacer"></li>
+                <li>个人中心 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+                <li class="spacer"></li>
+                <li>帮助中心 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+                <li class="spacer"></li>
+                <li class="f-top-extend1"><a href="#"></a></li>
+                <li class="f-top-extend2"><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--logo-->
+<div class="logo w">
+    <div class="logo-l">
+        <div class="logo-l1">
+            <a href="index.html"></a>
+
+            <div>会员中心</div>
+        </div>
+        <div class="logo-r">
+            如遇注册问题请拨打：<span>400-008-8122</span>
+        </div>
+    </div>
+</div>
+<!--main-->
+<div class="line"></div>
+<div class="main w clearfix">
+    <div class="main-l fl">
+        <ul>
+            <h2>我的订单</h2>
+            <li><a href="#">进口下单</a></li>
+            <li><a href="#">订单查询</a></li>
+        </ul>
+        <ul>
+            <h2>我的资金服务</h2>
+            <li><a href="#">我的授信额度</a></li>
+            <li><a href="#">我的服务记录</a></li>
+        </ul>
+        <ul>
+            <h2>我的供应商</h2>
+            <li><a href="#">供应商</a></li>
+        </ul>
+        <ul>
+            <h2>账户信息</h2>
+            <li><a href="#">账户信息与安全</a></li>
+            <li><a href="#">会员认证</a></li>
+            <li><a href="#">银行账户管理</a></li>
+            <li><a href="#">收货地址管理</a></li>
+        </ul>
+    </div>
+    <div class="main-r fl">
+        <ul class="clearfix query-head">
+            <li class="current">全部订单</li>
+            <li>待提交</li>
+            <li>待付款</li>
+            <li>待发货</li>
+            <li>待收货</li>
+            <li>完成</li>
+        </ul>
+        <div class="order-search">
+            <input type="text" id="orderSearch" placeholder="请输入订单号进行搜索"/>
+            <button id="orderSea">订单搜索</button>
+        </div>
+        <div class="filtrate-day clearfix">
+            <span class="fl">日期：</span>
+            <ul class="fl">
+                <li id="today">当天</li>
+                <li id="toweek">本周</li>
+                <li id="tomonth">本月</li>
+                <li id="threeMonth">前三个月</li>
+            </ul>
+            <div class="custom">
+                <span>自定义：</span>
+                <input type="text" id="day_1"/> -
+                <input type="text" id="day_2"/>
+                <input type="button" value="自定义查询" id="day_3"/>
+            </div>
+        </div>
+
+        <ul class="order-head">
+            <li>货柜批次号</li>
+            <li>货柜名称</li>
+            <li>货柜状态</li>
+            <li>贷款申请编号</li>
+            <li>贷款状态</li>
+            <li>订单状态</li>
+            <li>操作</li>
+        </ul>
+        <div class="ctrl-btn">
+            <button id="btn-last">上一页</button>
+            <button id="btn-next">下一页</button>
+        </div>
+        <div class="order-list clearfix" id="orderList" style="display: none">
+
+        </div>
+
+        <div class="noData">
+            <i class="iconfont icon-order order-icon1"></i>
+
+            <p>没有相关的订单哦</p>
+
+            <div class="noData-btn">
+                <input type="button" value="查看全部订单"/>
+                <input type="button" value="去下单"/>
+            </div>
+        </div>
+        <div id="Searchresult">分页初始化完成后这里的内容会被替换。</div>
+
+    </div>
+</div>
+<div id="Pagination" class="pagination"><!-- 这里显示分页 --></div>
+<form name="paginationoptions" style="display: none">
+    <p><label for="items_per_page">每页显示的列表数：</label><input type="text" value="4" name="items_per_page"
+                                                           id="items_per_page" class="numeric"/></p>
+
+    <p><label for="num_display_entries">分页链接显示数：</label><input type="text" value="3" name="num_display_entries"
+                                                               id="num_display_entries" class="numeric"/></p>
+
+    <p><label for="num">起始与结束点的数目：</label><input type="text" value="1" name="num_edge_entries" id="num_edge_entries"
+                                                 class="numeric"/></p>
+
+    <p><label for="prev_text">“上一页”标签：</label><input type="text" value=" < " name="prev_text" id="prev_text"/></p>
+
+    <p><label for="next_text">“下一页”标签：</label><input type="text" value=" > " name="next_text" id="next_text"/></p>
+    <input type="button" id="setoptions" value="设置选项"/>
+</form>
+<!--mask-->
+<div class="mask">
+    <div id="logistics">
+        <div class="inform-head">
+            <span class="fl">物流详情</span>
+            <i class="iconfont icon-chacha cancel fr"></i>
+        </div>
+        <div class="inform-body" id="inform-body">
+            <!--<div class="inform-top">-->
+                <!--<div class="inform-top1">-->
+                    <!--订单号：<span>101111111122333</span>-->
+                <!--</div>-->
+                <!--<div class="inform-top1">-->
+                    <!--货柜批次号：<span>101111111122333</span>-->
+                <!--</div>-->
+                <!--<div class="inform-top1">-->
+                    <!--国际物流公司：<span class="company">上海物流公司</span>-->
+                <!--</div>-->
+                <!--<div class="inform-top1">-->
+                    <!--国内物流公司：<span class="company">上海物流公司</span>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="inform-down">
+                <div class="down-head">
+                    <span>物流详情</span>
+                </div>
+                <!--<div class="logistics-details">-->
+                    <!--<span class="date">2017-06-15</span>-->
+                    <!--<span class="time">13:20:02</span>-->
+                    <!--<span>-->
+                        <!--您的货柜已发货，车牌号是c92944-->
+                    <!--</span>-->
+                    <!--<div class="img2">-->
+                        <!--<img src="" alt=""/>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--底部通栏-->
+<div class="f-bottom w clearfix">
+    <ul>
+        <h2>友情链接</h2>
+        <li><a href="javascript:;">海关通关信息网</a></li>
+        <li><a href="javascript:;">中国进出口服务网</a></li>
+        <li><a href="javascript:;">跨境物流服务网</a></li>
+    </ul>
+    <ul>
+        <h2>关于我们</h2>
+        <li><a href="javascript:;">联系我们</a></li>
+        <li><a href="javascript:;">法律声明</a></li>
+        <li><a href="javascript:;">合作伙伴</a></li>
+    </ul>
+    <ul>
+        <h2>商务合作</h2>
+        <li><a href="javascript:;">服务热线：027-87038323</a></li>
+        <li><a href="javascript:;">企业QQ:403009669</a></li>
+        <li><a href="javascript:;">企业邮箱:pengfengxia@sina.com</a></li>
+        <li><a href="javascript:;">传真号码：027-87038323</a></li>
+    </ul>
+    <ul>
+        <h2>关注我们</h2>
+        <li><span class="QRcode"></span></li>
+    </ul>
+    <ul>
+        <div class="f-tel">
+            <span class="f-phone"></span>
+
+            <div class="f-bottom-info">
+                24小时 <br/>
+                服务热线
+            </div>
+        </div>
+        <p>027-87038323</p>
+    </ul>
+</div>
+<!--bottom-->
+<div class="ff-bottom">
+    <i></i>
+
+    <p>Copyright@&nbsp;版权所有&nbsp;创意科技&nbsp;鄂ICP备10001406号-1&nbsp;鄂公网安备360402020001号</p>
+</div>
+</body>
+<script>
+    laydate({
+
+        elem: '#day_1'
+
+    });
+
+    laydate({
+
+        elem: '#day_2'
+
+    });
+
+    var data = {
+        "data": {
+            "pageSize": 4,
+            "pageNo": 1,
+            "topPageNo": 1,
+            "list": [
+                {
+                    "date": "2017-06-03",
+                    "orderStatus": 1,
+                    "containerDetails": [
+                        {
+                            "containerStatus": 1,
+                            "containerId": "11170603543301",
+                            "loanStatus": null,
+                            "containerStatusDesc": "暂存",
+                            "loanStatusDesc": null,
+                            "loanNo": null,
+                            "productName": "越南火龙果"
+                        },
+                        {
+                            "containerStatus": 1,
+                            "containerId": "11170603543301",
+                            "loanStatus": null,
+                            "containerStatusDesc": "暂存",
+                            "loanStatusDesc": null,
+                            "loanNo": null,
+                            "productName": "越南火龙果"
+                        },
+                        {
+                            "containerStatus": 1,
+                            "containerId": "11170603543301",
+                            "loanStatus": null,
+                            "containerStatusDesc": "暂存",
+                            "loanStatusDesc": null,
+                            "loanNo": null,
+                            "productName": "越南火龙果"
+                        },
+                    ],
+                    "orderStatusDesc": "已暂存",
+                    "orderNo": "111706035433",
+                    "supplierName": "创意公司"
+                },
+
+                {
+                    "date": "2017-06-03",
+                    "orderStatus": 2,
+                    "containerDetails": [
+                        {
+                            "containerStatus": 1,
+                            "containerId": "11170603543301",
+                            "loanStatus": null,
+                            "containerStatusDesc": "暂存",
+                            "loanStatusDesc": null,
+                            "loanNo": null,
+                            "productName": "越南火龙果"
+                        }
+                    ],
+                    "orderStatusDesc": "审核中",
+                    "orderNo": "111706035433",
+                    "supplierName": "创意公司"
+                },
+                {
+                    "date": "2017-05-30",
+                    "orderStatus": 3,
+                    "containerDetails": [
+                        {
+                            "containerStatus": 6,
+                            "containerId": "11170603543301",
+                            "loanStatus": null,
+                            "containerStatusDesc": "暂存",
+                            "loanStatusDesc": null,
+                            "loanNo": null,
+                            "productName": "越南火龙果"
+                        }
+                    ],
+                    "orderStatusDesc": "审核通过",
+                    "orderNo": "111706035433",
+                    "supplierName": "创意公司"
+                },
+                {
+                    "date": "2017-05-30",
+                    "orderStatus": 4,
+                    "containerDetails": [
+                        {
+                            "containerStatus": 6,
+                            "containerId": "11170603543301",
+                            "loanStatus": null,
+                            "containerStatusDesc": "暂存",
+                            "loanStatusDesc": null,
+                            "loanNo": null,
+                            "productName": "越南火龙果"
+                        }
+                    ],
+                    "orderStatusDesc": "已提交",
+                    "orderNo": "111706035433",
+                    "supplierName": "创意公司"
+                },
+                {
+                    "date": "2017-05-30",
+                    "orderStatus": 5,
+                    "containerDetails": [
+                        {
+                            "containerStatus": 6,
+                            "containerId": "11170603543301",
+                            "loanStatus": null,
+                            "containerStatusDesc": "暂存",
+                            "loanStatusDesc": null,
+                            "loanNo": null,
+                            "productName": "越南火龙果"
+                        }
+                    ],
+                    "orderStatusDesc": "已发货",
+                    "orderNo": "111706035433",
+                    "supplierName": "创意公司"
+                },
+            ],
+            "totalPages": 2,
+            "previousPageNo": 1,
+            "nextPageNo": 2,
+            "bottomPageNo": 2,
+            "totalRecords": 7
+        },
+        "code": 200,
+        "msg": "success"
+    }
+</script>
+<script src="../src/js/pages/orderQuery/orderCreateTable.js"></script>
+<script src="../src/js/pages/orderQuery/queryOrderList.js"></script>
+<script src="../src/js/pages/orderQuery/logistics.js"></script>
+
+
+
+</html>

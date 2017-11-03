@@ -1,0 +1,7 @@
+{
+  "dependencies": [
+    "src/js/commonjs/prompt.js",
+    "src/js/commonjs/loading.js",
+    "src/js/pages/getLoanLines/*.js"
+  ]
+}

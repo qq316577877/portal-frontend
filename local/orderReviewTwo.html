@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>进口下单</title>
+    <link rel="stylesheet" href="../src/assets/css/base.css"/>
+    <link rel="stylesheet" href="../src/assets/css/order/orderReviewTwo.css"/>
+    <link rel="stylesheet" href="../src/plugin/lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../src/plugin//x/iconfont.css"/>
+    <script src="../src/plugin/lib/jquery/jquery.min.js"></script>
+    <script src="../src/plugin/lib/bootstrap/js/bootstrap.js"></script>
+
+</head>
+<body>
+<!--顶部通栏-->
+<div class="f-top">
+    <div class="w">
+        <div class="f-top-l fl">
+            <a href="index.html">
+                <div class="f-top-f"></div>
+                <div class="f-top-i">返回首页</div>
+            </a>
+        </div>
+        <div class="f-top-r fr">
+            <ul>
+                <li>登陆 <span class="f-top-r-down login"></span></li>
+                <li class="spacer"></li>
+                <li>我的订单 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+                <li class="spacer"></li>
+                <li>个人中心 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+                <li class="spacer"></li>
+                <li>帮助中心 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+                <li class="spacer"></li>
+                <li class="f-top-extend1"><a href="#"></a></li>
+                <li class="f-top-extend2"><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--logo-->
+<div class="logo w">
+    <div class="logo-l">
+        <div class="logo-l1">
+            <a href="index.html"></a>
+
+            <div>进口下单</div>
+        </div>
+        <div class="logo-r">
+            如遇注册问题请拨打：<span>400-008-8122</span>
+        </div>
+    </div>
+</div>
+
+<!--main-->
+<div class="w">
+    <div class="main">
+        <div class="adress">
+            <div class="adress-head">
+                <h2>收货地址</h2>
+                <a href="javascript:;">管理我的收货地址</a>
+            </div>
+            <div class="adress-body">
+                <div class="adress-1">
+                    <h4>收货人</h4>
+                    <select id="select">
+                        <option value="">请选择</option>
+                    </select>
+                    <a id="add_1" href="#">增加新收件人</a>
+                </div>
+                <ul id="select_list">
+                    <li>
+                        <span>收件人：</span>
+                        邱老板
+                    </li>
+                    <li>
+                        <span>所在地区：</span>
+
+                        <div class="country"></div>
+                        <div class="province"></div>
+                        <div class="xian"></div>
+                    </li>
+                    <li>
+                        <span>详细地址：</span>
+                        邱老板
+                    </li>
+                    <li>
+                        <span>邮政编码：</span>
+                        邱老板
+                    </li>
+                    <li>
+                        <span>手机：</span>
+                        邱老板
+                    </li>
+                    <li>
+                        <span>固定电话：</span>
+                        邱老板
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="adress logistics">
+            <div class="adress-head">
+                <h2>物流服务</h2>
+            </div>
+            <div class="adress-body">
+                <div class="logistics_1">
+                    <span>运输方式</span>
+
+                    <div class="logistics_2">
+                        <input type="radio" name="logistics"/>
+                        海运
+                    </div>
+                    <div class="logistics_2">
+                        <input type="radio" name="logistics"/>
+                        陆运
+                    </div>
+                </div>
+                <div class="logistics_1">
+                    <span>国际物流</span>
+                    <span class="international-logistic">国际物流公司A</span>
+                </div>
+                <div class="logistics_1 logistics_3">
+                    <span>国内物流</span>
+                    <span class="international-logistic">宁波长运物流公司B</span>
+                </div>
+            </div>
+        </div>
+        <div class="adress trade">
+            <div class="adress-head">
+                <h2>贸易方式</h2>
+            </div>
+            <div class="adress-body">
+                <div class="trade_1">
+                    <input type="radio" name="trade"/>
+                    <span>FOB</span>
+                    <span>(离岸价，成本)</span>
+                </div>
+                <div class="trade_1">
+                    <input type="radio" name="trade"/>
+                    <span>CIF</span>
+                    <span>(到岸价，成本+运费+保险费)</span>
+                </div>
+            </div>
+        </div>
+        <div class="adress customsClearance">
+            <div class="adress-head">
+                <h2>通关服务</h2>
+            </div>
+            <div class="adress-body">
+                <div class="customsClearance_1">
+                    <input type="checkbox" checked disabled name="customs"/>
+                    <span>报关</span>
+                </div>
+                <div class="customsClearance_1">
+                    <input type="checkbox" checked disabled name="customs"/>
+                    <span>清关</span>
+                </div>
+                <div class="customsClearance_2">
+                    <span>清关公司</span>
+                    <span>广西进口清关有限责任公司B</span>
+                </div>
+            </div>
+        </div>
+        <div class="adress insurance">
+            <div class="adress-head">
+                <h2>保险服务</h2>
+            </div>
+            <div class="adress-body">
+                <div class="insurance_1">
+                    <input type="checkbox" checked disabled name="insurance"/>
+                    <span>保险</span>
+                    <span>（保险为保障您的货物安全，为第三方保险承保）</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="adress money">
+            <div class="adress-head">
+                <h2>资金服务</h2>
+            </div>
+            <div class="adress-body">
+                <div class="loan">
+                    <div class="loan-limit">
+                        可用贷款额度：0
+                    </div>
+                    <a href="javascript:;" class="loan-apply">
+                        申请贷款额度
+                    </a>
+                    <a href="javascript:;" class="loan-cal" id="loan-cal">
+                        贷款计算器
+                    </a>
+                </div>
+                <p class="loan-info">年利率10%，（10万块用15天利息只需416.67元）</p>
+
+                <div class="need-loan">
+                    <label for="">
+                        <input type="radio" name="need-loan"/>
+                        <span>需要</span>
+                    </label>
+                    <label for="">
+                        <input type="radio" name="need-loan"/>
+                        暂不需要
+                    </label>
+                </div>
+                <table class="loan-table">
+                    <tr class="t-head">
+                        <th>货柜批次号</th>
+                        <th>货柜名称</th>
+                        <th>可贷款金额</th>
+                        <th>申请金额</th>
+                        <th>服务费</th>
+                    </tr>
+                    <tr class="tab-tr">
+                        <td>20170517001</td>
+                        <td>越南火龙果</td>
+                        <td>50,000.00元</td>
+                        <td>
+                            <input type="text" class="fl"/>
+                            <span class="fl">元</span>
+                        </td>
+                        <td>
+                            <input type="text" class="fl"/>
+                            <span class="fl">元</span>
+                        </td>
+                    </tr>
+                    <tr class="tab-tr">
+                        <td>20170517001</td>
+                        <td>越南香蕉</td>
+                        <td>50,000.00元</td>
+                        <td>
+                            <input type="text" class="fl"/>
+                            <span class="fl">元</span>
+                        </td>
+                        <td>
+                            <input type="text" class="fl"/>
+                            <span class="fl">元</span>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="attention">
+                    *说明：申请金额必须为1000的整数倍,贷款期限以实际放款日与实际还款日为准 <br/>
+                    放款时间：验货发车后2小时以内<br/>
+                    还款时间：预计到货时间前24以前还款<br/>
+                </div>
+            </div>
+        </div>
+        <div class="adress contract">
+            <div class="adress-head">
+                <h2>采购合同</h2>
+            </div>
+            <div class="adress-body clearfix">
+                <div class="contract_1 clearfix">
+                    <h5><span style="color: #ff4848">*</span>上传采购合同</h5>
+                    <div class="big-photo">
+                        <div id="preview">
+                            <img id="imghead" border="0" src="img/img_1_r2_c2.gif" width="140" height="102" onclick="$('#previewImg').click();">
+                        </div>
+                        <input type="file" onchange="previewImage(this)" style="display: none;" id="previewImg">
+                        <!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+                    </div>
+                </div>
+                <div class="contract_1 clearfix">
+                    <h5>付款凭证</h5>
+                    <div class="big-photo">
+                        <div id="preview_2">
+                            <img id="imghead_2" border="0" src="img/img_1_r2_c2.gif" width="140" height="102" onclick="$('#previewImg_2').click();">
+                        </div>
+                        <input type="file" onchange="previewImage_2(this)" style="display: none;" id="previewImg_2">
+                        <!--<input id="uploaderInput" class="uploader__input" style="display: none;" type="file" accept="" multiple="">-->
+                    </div>
+                </div>
+                <p class="clearfix add_info"><span>温馨提示：</span>证照只支持3M一下的jpg、png、pdf、jpeg格式的图片或文件</p>
+            </div>
+        </div>
+        <div class="adress settlement">
+            <div class="adress-head">
+                <h2>结算方式</h2>
+            </div>
+            <div class="adress-body">
+                <label for="">
+                    <div class="trade_1">
+                        <input type="radio" name="settlement"/>
+                        <span>预付全款</span>
+                        <span>(预付订单所有款项)</span>
+                    </div>
+                </label>
+                <label for="">
+                    <div class="trade_1">
+                        <input type="radio" name="settlement"/>
+                        <span>预付货款</span>
+                        <span>(预付订单所有货款)</span>
+                    </div>
+                </label>
+                <label for="">
+                    <div class="trade_1">
+                        <input type="radio" name="settlement"/>
+                        <span>预付定金</span>
+                        <span>(预付40%-60%定金，货到结算尾款)</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="submit">
+            <input type="button" value="上一步" id="last_step"/>
+            <input type="button" value="提交审核" id="next_step"/>
+        </div>
+    </div>
+</div>
+<!--mask-->
+<div class="mask">
+    <div class="inform" id="inform_1">
+        <div class="inform-head">
+            <span class="fl">新增供应商</span>
+            <i class="iconfont icon-chacha cancel fr"></i>
+        </div>
+        <div class="inform-body">
+            <div class="lab">
+                <div class="input-l"><span class="red">*</span> 所在地区 ：</div>
+                <select class="country" id="country"></select>
+
+                <div class="selectList">
+                    <select class="province">
+                        <option>请选择省</option>
+                    </select>
+                    <select class="city">
+                        <option>请选择市</option>
+                    </select>
+                    <select class="district">
+                        <option>请选择区</option>
+                    </select>
+                </div>
+                <p class="red judge"></p>
+            </div>
+
+            <div class="lab">
+                <div class="input-l"><span class="red">*</span> 详细地址：</div>
+                <input id="address" placeholder="请输入详细地址" p="111" maxlength="60" class="txt" type="text"/>
+
+                <p class="red judge"></p>
+            </div>
+
+            <div class="lab">
+                <div class="input-l"><span class="red">*</span> 邮政编码：</div>
+                <input id="zipCode" placeholder="如您不清楚邮政编码，请填写000000" maxlength="10" class="txt" type="text"/>
+
+                <p class="red judge"></p>
+            </div>
+
+
+            <div class="lab">
+                <div class="input-l fuml"><span class="red">*</span>收货人姓名：</div>
+                <input id="receiver" placeholder="长度不超过25个字" maxlength="12" class="ml-0 txt" type="text"/>
+
+                <p class="red judge"></p>
+            </div>
+
+            <div class="lab lab-tel">
+                <div class="input-l">手机号：</div>
+                <select class="country  ml-18"></select>
+                <input id="cellPhone" maxlength="20" placeholder="手机号/电话号码必填一项" type="text"/>
+
+                <p class="red judge"></p>
+            </div>
+
+            <div class="lab lab-phone">
+                <div class="input-l">电话号码：</div>
+                <select class="country"></select>
+                <input id="area" maxlength="10" placeholder="区号" type="text"/>
+                <input id="phoneNum" placeholder="电话号码" maxlength="10" type="text"/>
+
+                <p class="red judge"></p>
+            </div>
+
+            <p class="red reminder">手机号、电话号码选填一项，其余为必填</p>
+
+            <button class="save">保存</button>
+        </div>
+    </div>
+    <div class="inform" id="inform_2">
+        <div class="inform-head">
+            <span class="fl">贷款计算器</span>
+            <i class="iconfont icon-chacha cancel fr" id="cancel_1"></i>
+        </div>
+        <div class="inform-body">
+            <label for="">
+                <span>借多少</span>
+                <input type="text" id="money_loan"/>
+                <span>元</span>
+            </label>
+            <span id="empty">请输入正整数</span>
+            <label for="">
+                <span>借多久</span>
+                <input type="text" id="money-day"/>
+                <span>天</span>
+            </label>
+            <span id="wrong-day">钱数不能为空</span>
+            <label for="">
+                <span>怎么还</span>
+                <select name="" id="">
+                    <option value="">
+                        到期还本付息
+                    </option>
+                </select>
+            </label>
+
+            <p>月利率&nbsp;0.83% &nbsp;&nbsp; 服务费&nbsp;0.1%</p>
+
+            <div class="btn-ca">
+                <button id="btn_1">计算</button>
+                <button id="btn_2">重置</button>
+            </div>
+            <h4>还款详情</h4>
+
+            <div class="loan-details">
+                <div>到期还本金</div>
+                <div>借满10天总利息</div>
+                <div>借款服务费</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--底部通栏-->
+<div class="f-bottom w clearfix">
+    <ul>
+        <h2>友情链接</h2>
+        <li><a href="javascript:;">海关通关信息网</a></li>
+        <li><a href="javascript:;">中国进出口服务网</a></li>
+        <li><a href="javascript:;">跨境物流服务网</a></li>
+    </ul>
+    <ul>
+        <h2>关于我们</h2>
+        <li><a href="javascript:;">联系我们</a></li>
+        <li><a href="javascript:;">法律声明</a></li>
+        <li><a href="javascript:;">合作伙伴</a></li>
+    </ul>
+    <ul>
+        <h2>商务合作</h2>
+        <li><a href="javascript:;">服务热线：027-87038323</a></li>
+        <li><a href="javascript:;">企业QQ:403009669</a></li>
+        <li><a href="javascript:;">企业邮箱:pengfengxia@sina.com</a></li>
+        <li><a href="javascript:;">传真号码：027-87038323</a></li>
+    </ul>
+    <ul>
+        <h2>关注我们</h2>
+        <li><span class="QRcode"></span></li>
+    </ul>
+    <ul>
+        <div class="f-tel">
+            <span class="f-phone"></span>
+
+            <div class="f-bottom-info">
+                24小时 <br/>
+                服务热线
+            </div>
+        </div>
+        <p>027-87038323</p>
+    </ul>
+</div>
+<!--bottom-->
+<div class="ff-bottom">
+    <i></i>
+
+    <p>Copyright@&nbsp;版权所有&nbsp;创意科技&nbsp;鄂ICP备10001406号-1&nbsp;鄂公网安备360402020001号</p>
+</div>
+</body>
+</html>
+<script src="../src/js/pages/orderReviewTwo/importStep2.js"></script>
+<script src="../src/js/pages/orderReviewTwo/importStep2_tan.js"></script>
+<script src="../src/js/pages/orderReviewTwo/uploading.js"></script>
+<script>
+    __DATA = {
+        // 以下是预埋的收件地址信息
+        "receiveAddress": [
+            {
+                "address": "平阳县万全镇江畔村（村委会办公楼边",
+                "id": 3,
+                "countryId": 1,
+                "countryName": "中国",
+                "provinceId": 110000,
+                "districtId": 110101,
+                "provinceName": "北京市",
+                "receiver": "邱老板",
+                "phoneNum": "86-0755-928385",
+                "cityName": "北京市",
+                "cityId": 110100,
+                "selected": 1,
+                "cellPhone": "86-13912345678",
+                "zipCode": "000000",
+                "districtName": "东城区"
+            },
+            {
+                "address": "平阳县万全镇江畔村（村委会办公楼边",
+                "id": 2,
+                "countryId": 1,
+                "countryName": "中国",
+                "provinceId": 110000,
+                "districtId": 110101,
+                "provinceName": "北京市",
+                "receiver": "老板",
+                "phoneNum": "86-0755-928385",
+                "cityName": "北京市",
+                "cityId": 110100,
+                "selected": 0,
+                "cellPhone": "86-13912345678",
+                "zipCode": "000000",
+                "districtName": "东城区"
+            }
+        ],
+
+        //以下是预埋的号码前缀
+        "codeList": [{
+            "name": "越南",
+            "areaCode": "084",
+            "id": 1
+        },
+            {
+                "name": "中国",
+                "areaCode": "086",
+                "id": 2
+            }
+        ]
+    }
+
+
+</script>

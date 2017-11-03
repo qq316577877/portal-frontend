@@ -1,0 +1,267 @@
+/*main*/
+.line {
+    width: 100%;
+    height: 9px;
+    background: url("../../img/line.png") no-repeat;
+    margin-bottom: 18px;
+}
+.main-l {
+    width: 180px;
+    height: 530px;
+    border: 1px solid #dddddd;
+    padding-top: 20px;
+    padding-left: 24px;
+}
+
+.main-l ul {
+    margin-bottom: 20px;
+}
+
+.main-l ul h2 {
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    height: 40px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+.main-l ul li {
+    height: 28px;
+    line-height: 28px;
+    padding-left: 16px;
+}
+
+.main-l ul li a {
+    font-size: 14px;
+    color: #666666;
+}
+
+.main h3{
+	display: inline-block;
+    font-size: 16px;
+    color: #333;
+    margin-left:40px;
+    margin-top: 0;
+}
+
+.main #typeText{
+	margin-left:20px ;
+}
+.main .cause{
+	display: none;
+	margin-left:255px;
+    /*min-width: 600px;*/
+}
+.main .cause #rejectNote{
+    display: inline-block;
+    width: 400px;
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*word-break: keep-all;*/
+}
+.main .wire1{
+	display: block;
+	height:2px;
+	background:#00AA5C;
+	width:104px;
+	margin-left: 40px;
+}
+.main .wire2{
+	display: block;
+	height:2px;
+	background:#ddd;
+	width:876px;
+}
+.mainBox{
+    margin-left:80px;
+    margin-top:25px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.input-l {
+	margin-right:16px;
+    width: 128px;
+    text-align: right;
+    display: inline-block;
+    line-height: 52px;
+} 
+
+.dis-left{
+	display: inline-block;
+	font-size:14px;
+	color:#999;
+	font-weight:100 ;
+	}
+
+.imgList{margin-left:10px;margin-top:32px;}
+.imgList li{float:left;margin-right:80px;width: 158px;text-align: center;}
+.imgList li p{
+    width: 165px;}
+
+.imgList li:nth-of-type(4){
+	margin-right:0 ;
+}
+.imgList img{width:140px;height:102px;}
+
+.mainBox .sub{
+	display: none;
+	border-radius:6px ;
+	margin: 60px 0 0 200px;
+	text-align: center;
+	line-height:40px ;
+	color: #fff;
+	font-size:16px;
+	font-weight: 700;
+	width:192px;
+	height: 40px;
+	background: #00AA5C;
+}
+.main-r-show{
+	text-align: center;
+}
+.main-r-show img{
+	height: 68px;
+	margin-bottom:24px;
+}
+.main-r-show .inform{
+	font-size:20px;color:#333;
+}
+.main-r-show .approve{
+	width: 128px;
+	height: 40px;
+	border:1px solid #00AA5C;
+	background:#fff;
+	font-size:16px;
+	color:#00AA5C;
+	border-radius:5px ;
+}
+
+.main-r-show .approve:hover{
+	border:1px solid #10C471;
+	background:rgba(16,196,113,0.1);
+}
+
+
+.main .showHide{
+	display: none;
+}
+
+.main form {
+	display: block;
+    margin-left:80px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.input-l {
+    width: 128px;
+    text-align: right;
+    display: inline-block;
+    line-height: 52px;
+} 
+
+
+.main form span {
+    font-size: 14px;
+    color: #ff4848;
+    margin-right: 5px;
+}
+
+form label input[type=text]{
+    width: 400px;
+    height: 36px;
+    border: 1px solid #d9d9d9;
+    padding-left: 8px;
+    font-size: 14px;
+    margin: 8px 0;
+}
+form label input[type=radio]{
+    padding-left: 8px;
+    font-size: 14px;
+    margin: 18px 8px 0 10px;
+
+}
+form label select{
+	width: 90px;
+	height: 36px;
+    font-size: 14px;
+	margin-top: 8px;
+	margin-right:9px;
+}
+.mr0{margin-right:0!important;}
+
+form label .selectList{display: inline-block;}
+
+form label input[type=file]{
+	display: none;
+}
+.main form label {
+    margin-bottom: 0;
+}
+
+.main form .vcBox{margin-bottom:60px;}
+
+.main form label .uploadingBox{display: inline-block;}
+
+.main label .memEntBOX{display:inline-block;}
+
+.main label:nth-child(1) .memEntBOX{margin-right:80px;}
+
+
+::-webkit-input-placeholder {
+    color: #bbb;
+}
+
+.main label .image-upload{display: inline-block;vertical-align:top;}
+.main label .image-upload .warning{
+	font-size:14px;color:#666;
+}
+.main label .image-upload .red{color:#ff4848;}
+
+
+.main label .image-upload .imgBox{
+	width: 140px;height: 102px;border: 1px dashed #999;
+	background: #F2F2F2;text-align: center;
+}
+
+.image-upload .imgBox img{
+	
+	width:65px;
+	height:50px;
+	margin:15px 0 10px 0;
+					
+}
+.image-upload .imgBox .uploading{font-size:14px;color:#999;}
+
+
+.mb{margin-bottom:32px;}
+.mr{margin-right:48px ;}
+.mt{margin-top:30px ;}
+
+
+.main .hint{width: 300px;margin:32px 0 60px 130px ;font-size:12px;color:#666 ;}
+
+.sub {
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	margin:0 auto ;
+    width: 192px;
+    height: 40px;
+    background-color: #00aa5c;
+    color: #ffffff;
+    margin-left: 100px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.sub:hover{
+	background:#10C471;
+}
+
+
+.red{color: red;}
+.judge{display:none;}

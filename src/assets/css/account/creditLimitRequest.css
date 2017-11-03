@@ -1,0 +1,41 @@
+.main .main-r{
+	margin-left: 50px;
+}
+.main-r-content{
+	margin-left:200px;
+	margin-top: 40px;
+}
+.main-r-content .notice{
+	color:#00AA5C;
+	font-size: 16px;
+	margin:10px 0 10px 0 ;
+}
+.main-r-content .notify{
+	font-size:14px;
+	color:#333;
+	margin-bottom: 64px;
+}
+.main-r-content .btnBox button{
+	padding:12px 28px;
+	border-radius:5px ;
+}
+.main-r-content .btnBox .apply-for{
+	display:inline-block;
+	border-radius: 5px;
+	padding: 12px 28px;
+	color:#fff;
+	background:#00AA5C ;
+	margin-right:72px;
+}
+.main-r-content .btnBox .apply-for:hover{
+	background: #10C471;
+}
+
+.main-r-content .btnBox #calculate{
+	background:#fff;
+	color:#00AA5C;
+	border:1px solid #00AA5C;
+}
+.main-r-content .btnBox #calculate:hover{
+	background: rgba(16,196,113,0.1);
+}

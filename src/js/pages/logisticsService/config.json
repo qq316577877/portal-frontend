@@ -1,0 +1,6 @@
+{
+  "dependencies": [
+    "src/js/mods/url/index.js",
+    "src/js/pages/logisticsService/index.js"
+  ]
+}

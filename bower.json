@@ -1,0 +1,25 @@
+{
+//  "name": "fruit",
+//  "version": "1.0.0",
+//  "homepage": "",
+//  "license": "MIT",
+//  "ignore": [
+//    "**/.*",
+//    "node_modules",
+//    "bower_components",
+//    "src/vendor",
+//    "test",
+//    "tests",
+//    "src/lib"
+//  ],
+//  "dependencies": {
+//    "jquery": "~1",
+//    "handlebars": "^3.0.0",
+//    "jquery.lazyload": "~1.9.7",
+//    "devbridge-autocomplete": "~1.2.24",
+//    "jquery-modal": "~0.6.0",
+//    "es5-shim": "~4.3.1",
+//    "fex-webuploader": "~0.1.5",
+//    "bxslider-4": "~4.2.5"
+//  }
+}

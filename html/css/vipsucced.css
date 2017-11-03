@@ -1,0 +1,123 @@
+/*main*/
+.main {
+    width: 100%;
+    border: 1px solid #D9D9D9;
+}
+
+.main .suc {
+    font-size: 64px;
+    color: #00aa5c;
+    margin-top: 40px;
+    text-align: center;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.main h2 {
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.main p:last-of-type {
+    margin-bottom: 0;
+}
+
+.back {
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.back a {
+    width: 128px;
+    height: 40px;
+    border: 1px solid #00aa5c;
+    background: #ffffff;
+    font-size: 16px;
+    color: #00aa5c;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.back a:nth-of-type(2) {
+    margin-left: 48px;
+}
+
+.back a:hover {
+    border-color: #10c471;
+    background: rgba(16, 196, 113, .1);
+    color: #10c471;
+    transition: all .5s;
+}
+
+.back a:focus {
+    border-color: #999999;
+    background: #f2f2f2;
+    color: #999;
+}
+
+.f-bottom {
+    margin-top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

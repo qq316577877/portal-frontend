@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的资金服务记录</title>
+		<link rel="stylesheet" href="../src/assets/css/base.css" />
+		<link rel="stylesheet" href="../src/assets/css/account/limitGenerality.css" />
+		<link rel="stylesheet" href="../src/assets/css/account/MyIou.css" />
+		<link rel="stylesheet" href="../src/assets/css/account/animate.min.css" />
+		<link rel="stylesheet" href="../src/plugin/lib/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="../src/plugin/lib/jQueryPage/page.css" />
+		<script src="../src/plugin/lib/jquery/jquery.min.js"></script>
+		<script src="../src/plugin/lib/bootstrap/js/bootstrap.js"></script>
+		<script src="../src/plugin/jQueryPage/jquery.page.js"></script>
+		<link rel="stylesheet" href="../src/plugin/x/iconfont.css" />
+		<link rel="stylesheet" href="../src/plugin/iconfont/iconfont.css" />
+		<script src="../src/js/pages/MyIou/index.js"></script>
+	</head>
+
+	<body>
+		<!--顶部通栏-->
+		<div class="f-top">
+			<div class="w">
+				<div class="f-top-l fl">
+					<a href="index.html">
+						<div class="f-top-f"></div>
+						<div class="f-top-i">返回首页</div>
+					</a>
+				</div>
+				<div class="f-top-r fr">
+					<ul>
+						<li>我的订单 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+						<li class="spacer"></li>
+						<li>个人中心 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+						<li class="spacer"></li>
+						<li>帮助中心 <span class="glyphicon glyphicon-menu-down f-top-r-down"></span></li>
+						<li class="spacer"></li>
+						<li class="f-top-extend1">
+							<a href="#"></a>
+						</li>
+						<li class="f-top-extend2">
+							<a href="#"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--logo-->
+		<div class="logo w">
+			<div class="logo-l">
+				<div class="logo-l1">
+					<a href="index.html"></a>
+
+					<div>会员中心</div>
+				</div>
+				<div class="logo-r">
+					如遇注册问题请拨打：<span>400-008-8122</span>
+				</div>
+			</div>
+		</div>
+		<!--main-->
+		<div class="line"></div>
+		<div class="main w clearfix">
+			<div class="main-l fl">
+				<ul>
+					<h2>我的订单</h2>
+					<li>
+						<a href="#">进口下单</a>
+					</li>
+					<li>
+						<a href="#">订单查询</a>
+					</li>
+				</ul>
+				<ul>
+					<h2>我的资金服务</h2>
+					<li>
+						<a href="#">我的授信额度</a>
+					</li>
+					<li>
+						<a href="#">我的服务记录</a>
+					</li>
+				</ul>
+				<ul>
+					<h2>我的供应商</h2>
+					<li>
+						<a href="#">供应商</a>
+					</li>
+				</ul>
+				<ul>
+					<h2>账户信息</h2>
+					<li>
+						<a href="#">账户信息与安全</a>
+					</li>
+					<li>
+						<a href="#">会员认证</a>
+					</li>
+					<li>
+						<a href="#" class="on">银行账户管理</a>
+					</li>
+					<li>
+						<a href="#">收货地址管理</a>
+					</li>
+				</ul>
+			</div>
+			<div class="main-r fl">
+				<div class="main-r-content">
+					<div class="main-head  clearfix">
+						<ul class="top-list fl">
+							<li data-type="1">全部</li>
+							<li class="active" data-type="2">待还款</li>
+							<li  data-type="3">已还款</li>
+						</ul>
+						<div class="searchBox fr">
+							<i class="icon-search"></i><input type="text" name="search" class="search" placeholder="请输入订单号或货柜批次号" /><button class="search-btn">搜索</button>
+						</div>
+					</div>
+					<ul class="thList list clearfix">
+						<li>序号</li>
+						<li>订单号</li>
+						<li>货柜批次号</li>
+						<li>货柜状态</li>
+						<li>借据金额</li>
+						<li>借据状态</li>
+						<li>借据到期日</li>
+						<li>贷款状态</li>
+					</ul>
+					<div class="null-show none hidden">
+						<img src="../src/assets/img/MoneyNull.png" />
+						<p>没有相关记录哦~</p>
+					</div>
+					<div class="have-show none">
+						<ul class="tabBox">
+							<li>
+								<ul class="tdList list clearfix">
+									<li class="font1">i++</li>
+									<li class="font2">cy20170508002</li>
+									<li class="font1">20170508011</li>
+									<li class="font1">待审核</li>
+									<li class="font1">300000000</li>
+									<li class="font2">已放款</li>
+									<li class="font1"><time>2017-05-08</time></li>
+									<li>
+										<a href="###" class="font3 examine" data-id="?">查看</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="tdList list clearfix">
+									<li class="font1">i++</li>
+									<li class="font2">cy20170508002</li>
+									<li class="font1">20170508011</li>
+									<li class="font1">待审核</li>
+									<li class="font1">300000000</li>
+									<li class="font2">已放款</li>
+									<li class="font1"><time>2017-05-08</time></li>
+									<li>
+										<a href="###" class="font3" data-id="?">查看</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="tdList list clearfix">
+									<li class="font1">i++</li>
+									<li class="font2">cy20170508002</li>
+									<li class="font1">20170508011</li>
+									<li class="font1">待审核</li>
+									<li class="font1">300000000</li>
+									<li class="font2">已放款</li>
+									<li class="font1"><time>2017-05-08</time></li>
+									<li>
+										<a href="###" class="font3" data-id="?">查看</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="tdList list clearfix">
+									<li class="font1">i++</li>
+									<li class="font2">cy20170508002</li>
+									<li class="font1">20170508011</li>
+									<li class="font1">待审核</li>
+									<li class="font1">300000000</li>
+									<li class="font2">已放款</li>
+									<li class="font1"><time>2017-05-08</time></li>
+									<li>
+										<a href="###" class="font3" data-id="?">查看</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="tdList list clearfix">
+									<li class="font1">i++</li>
+									<li class="font2">cy20170508002</li>
+									<li class="font1">20170508011</li>
+									<li class="font1">待审核</li>
+									<li class="font1">300000000</li>
+									<li class="font2">已放款</li>
+									<li class="font1"><time>2017-05-08</time></li>
+									<li>
+										<a href="###" class="font3" data-id="?">查看</a>
+									</li>
+								</ul>
+							</li>
+
+							<li>
+								<ul class="tdList list clearfix">
+									<li class="font1">i++</li>
+									<li class="font2">cy20170508002</li>
+									<li class="font1">20170508011</li>
+									<li class="font1">待审核</li>
+									<li class="font1">300000000</li>
+									<li class="font2">已放款</li>
+									<li class="font1"><time>2017-05-08</time></li>
+									<li>
+										<a href="###" class="font3" data-id="?">查看</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="tdList list clearfix">
+									<li class="font1">i++</li>
+									<li class="font2">cy20170508002</li>
+									<li class="font1">20170508011</li>
+									<li class="font1">待审核</li>
+									<li class="font1">300000000</li>
+									<li class="font2">已放款</li>
+									<li class="font1"><time>2017-05-08</time></li>
+									<li>
+										<a href="###" class="font3" data-id="?">查看</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<ul class="tdList list clearfix">
+									<li class="font1">i++</li>
+									<li class="font2">cy20170508002</li>
+									<li class="font1">20170508011</li>
+									<li class="font1">待审核</li>
+									<li class="font1">300000000</li>
+									<li class="font2">已放款</li>
+									<li class="font1"><time>2017-05-08</time></li>
+									<li>
+										<a href="###" class="font3" data-id="?">查看</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="pageDiv"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--计算器-->
+		<div class="mask">
+
+			<div class="inform" id="inform_2">
+				<div class="inform-head">
+					<span class="fl">借据信息</span>
+					<i class="iconfont icon-chacha cancel fr" id="cancel_1"></i>
+				</div>
+				<div class="inform-body">
+					<div class="inform-body-top clearfix">
+						<div class="top-l fl">
+							<div>
+								<p class="Ious">借据号:</p><i class="font2">10000120170411001</i></div>
+							<div>
+								<p class="Ious">借据金额:</p><i class="font2">50,000.00</i></div>
+							<div>
+								<p class="Ious">还款方式:</p><i class="font2">到期还款付息</i></div>
+							<div>
+								<p class="Ious">借据号状态:</p><i class="font4">已还款</i></div>
+						</div>
+						<div class="top-r fl">
+							<div>
+								<p class="Ious">强制还款日期:</p><time class="font2">2017-05-08</time></div>
+							<div>
+								<p class="Ious">起息日:</p><time class="font2">2017-05-08</time></div>
+							<div>
+								<p class="Ious">执行利率:</p><i class="font2">10%</i></div>
+						</div>
+					</div>
+
+					<div class="inform-body-middle clearfix">
+						<h1>还款明细</h1>
+						<div class="mid-l fl">
+							<div>
+								<p class="Ious font5">还款本金:</p><i class="font6">500000</i></div>
+							<div>
+								<p class="Ious font5 mb0">还款日期:</p><time class="font6">2017-05-08</time></div>
+						</div>
+						<div class="mid-r fl">
+							<div>
+								<p class="Ious font5">还款利息:</p><i class="font6">270.00</i></div>
+						</div>
+					</div>
+
+					<div class="inform-body-foot clearfix">
+						<div class="ft-l fl">
+							<div>
+								<p class="Ious font5">订单号:</p><i class="font6">201705080011</i></div>
+							<div>
+								<p class="Ious font5">货柜批次:</p><i class="font6">20170508001101</i></div>
+							<div>
+								<p class="Ious font5">发货时间:</p><time class="font6">2017-05-08</time><time class="font6">16:00:00</time></div>
+
+						</div>
+						<div class="ft-r fl">
+							<div>
+								<p class="Ious font5">订单状态:</p><i class="font6">已发货</i></div>
+							<div>
+								<p class="Ious font5">货柜状态:</p><i class="font6">已发货</i></div>
+							<div>
+								<p class="Ious font5">预计到货时间:</p><time class="font6">2017-05-08</time></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部通栏-->
+		<div class="f-bottom w clearfix">
+			<ul>
+				<h2>友情链接</h2>
+				<li>
+					<a href="javascript:;">海关通关信息网</a>
+				</li>
+				<li>
+					<a href="javascript:;">中国进出口服务网</a>
+				</li>
+				<li>
+					<a href="javascript:;">跨境物流服务网</a>
+				</li>
+			</ul>
+			<ul>
+				<h2>关于我们</h2>
+				<li>
+					<a href="javascript:;">联系我们</a>
+				</li>
+				<li>
+					<a href="javascript:;">法律声明</a>
+				</li>
+				<li>
+					<a href="javascript:;">合作伙伴</a>
+				</li>
+			</ul>
+			<ul>
+				<h2>商务合作</h2>
+				<li>
+					<a href="javascript:;">服务热线：027-87038323</a>
+				</li>
+				<li>
+					<a href="javascript:;">企业QQ:403009669</a>
+				</li>
+				<li>
+					<a href="javascript:;">企业邮箱:pengfengxia@sina.com</a>
+				</li>
+				<li>
+					<a href="javascript:;">传真号码：027-87038323</a>
+				</li>
+			</ul>
+			<ul>
+				<h2>关注我们</h2>
+				<li><span class="QRcode"></span></li>
+			</ul>
+			<ul>
+				<div class="f-tel">
+					<span class="f-phone"></span>
+
+					<div class="f-bottom-info">
+						24小时 <br/> 服务热线
+					</div>
+				</div>
+				<p>027-87038323</p>
+			</ul>
+		</div>
+		<!--bottom-->
+		<div class="ff-bottom">
+			<i></i>
+
+			<p>Copyright@&nbsp;版权所有&nbsp;创意科技&nbsp;鄂ICP备10001406号-1&nbsp;鄂公网安备360402020001号</p>
+		</div>
+	</body>
+
+</html>

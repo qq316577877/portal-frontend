@@ -1,0 +1,851 @@
+/*main*/
+.main {
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    padding-top: 41px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.main-top {
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 40px;
+}
+
+.main-top ul {
+    width: 200px;
+    margin-right: 50px;
+    float: left;
+}
+
+.main-top ul li {
+    float: left;
+}
+
+.main-top ul li a {
+    color: #333333;
+}
+
+.order-detail {
+    display: block;
+    float: left;
+    margin-right: 50px;
+}
+
+.main-center {
+    position: relative;
+}
+
+.order-date .order-detail1 {
+    color: #999999;
+}
+
+.order-detail1 {
+    color: #00aa5c;
+}
+
+.order-No {
+    display: block;
+    float: left;
+    margin-right: 50px;
+}
+
+.order-date {
+    display: block;
+    float: left;
+    margin-right: 50px;
+}
+
+.main-center {
+    padding: 0 62px;
+    position: relative;
+}
+
+.order-type {
+    font-size: 16px;
+    color: #666666;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed #DDDDDD;
+    margin-bottom: 16px;
+}
+
+.order-type > span:nth-of-type(1) {
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold;
+    margin-right: 164px;
+}
+
+.order-type .order-supplier {
+    display: inline-block;
+    margin-left: 18px;
+    font-size: 16px;
+}
+
+.order-type .order-supplier span {
+    font-size: 14px;
+    color: #666666;
+    width: 256px;
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 24px;
+}
+
+.more {
+    display: inline-block;
+    font-size: 12px;
+    color: #666666;
+    cursor: pointer;
+}
+
+.more #more {
+    font-size: 12px;
+    color: #666666;
+    font-weight: normal;
+}
+
+.more #more .down {
+    margin-right: 0;
+    font-size: 12px;
+    color: #666666;
+    font-weight: normal;
+}
+
+.purchasing > span:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+
+.pro-list {
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 24px;
+}
+
+/*订单表格*/
+
+.pro-list-body table tr {
+
+    display: inline-table;
+}
+
+.pro-list-1 {
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 16px;
+    padding: 10px 24px;
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.pro-list-head {
+    margin-bottom: 5px;
+}
+
+.pro-list-head h3 {
+    width: 280px;
+    height: 36px;
+    margin: 0;
+    margin-right: 16px;
+    display: inline-block;
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.x {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #666;
+    position: absolute;
+    right: 10px;
+    padding-right: 3px;
+    top: 15px;
+    border-radius: 5px;
+}
+
+.x .cancel-1 {
+    line-height: 25px;
+    text-align: center;
+    color: #666666;
+}
+
+.list-head .first-th, .first-td {
+    width: 120px;
+    margin-right: 32px;
+}
+
+.total {
+    width: 104px;
+}
+
+.list-head {
+    padding-bottom: 8px;
+    display: block;
+    border-bottom: 1px dashed #cccccc;
+    font-size: 16px;
+    color: #666666;
+}
+
+.pro-list-body th, .pro-list-body td {
+    width: 88px;
+    margin-right: 32px;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.pro-list-body td .first-td {
+    width: 120px;
+}
+
+.pro-list-body td input, .pro-list-body td select {
+    width: 88px;
+    height: 36px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+.pro-list-1 .pro-list-body .in-1 {
+    width: 120px;
+}
+
+.pro-list-body td select {
+    font-size: 14px;
+    color: #333333;
+}
+
+.pro-list-body .price {
+    width: 107px;
+    /*margin-left: 7px;*/
+    margin-right: 32px;
+    color: #999999;
+}
+
+.supplier .pro-list .pro-list-body .in-1 {
+    width: 120px;
+}
+
+.pro-list-body .price span {
+    display: inline-block;
+}
+
+.in-3 {
+    /*margin-left: 6px;*/
+}
+
+.in-4 {
+    /*margin-left: 5px;*/
+}
+
+.pro-list-body .amount {
+    /*margin-left: -18px;*/
+    width: 107px;
+    margin-right: 50px;
+}
+
+.amount span {
+    display: inline-block;
+    color: #999999;
+}
+
+.pro-list-body .price-all {
+    margin-right: 0;
+    /*margin-left: -15px;*/
+    width: 120px;
+}
+
+.pro-list-body .price-all input {
+    width: 100px;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    color: #cccccc;
+}
+
+.pro-list-body .price-all span {
+    color: #cccccc;
+}
+
+.add-h {
+    font-size: 16px;
+    color: #00aa5c;
+    cursor: pointer;
+    margin-bottom: 16px;
+    width: 100px;
+}
+
+.add-h span:nth-of-type(1) {
+    font-family: Arial;
+}
+
+.add-h:hover, .add-h:focus {
+    color: #00c471;
+    text-decoration: underline;
+}
+
+.sum {
+    float: right;
+}
+
+.sum span {
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.sum input {
+    border-bottom: 1px solid #cccccc;
+    width: 130px;
+    background: #ffffff;
+    color: #999;
+}
+
+.sum span:nth-of-type(2) {
+    color: #999;
+    font-weight: normal;
+}
+
+.pro-list-1 {
+    margin-top: 10px;
+}
+
+.pro-list-body .price span {
+    font-size: 14px;
+    margin-right: 0;
+    font-weight: normal;
+    color: #999999;
+}
+
+.pro-list-body .amount span {
+    font-size: 14px;
+    margin-right: 0;
+    font-weight: normal;
+    color: #999999;
+}
+
+.pro-list-body .price-all span {
+    font-size: 14px;
+    margin-right: 0;
+    font-weight: normal;
+    color: #999999;
+}
+
+.pro-list-1 table tr {
+    margin-top: 16px;
+}
+
+.total {
+    margin-left: 35px;
+}
+
+.pro-list-1 .sum {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.pro-list-1 .sum span {
+    margin-right: 0;
+}
+
+.purchasing {
+    position: relative;
+}
+
+#view_more {
+    margin-bottom: 0;
+    position: absolute;
+    font-size: 14px;
+    color: #00aa5c;
+    right: 0;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+#view_more .down {
+    margin-right: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #00aa5c;
+}
+
+.goods-name {
+    display: inline-block;
+    font-size: 16px;
+    color: #666666;
+}
+
+.goods-name span {
+    width: 88px;
+    margin-left: 8px;
+    display: inline-block;
+    margin-right: 32px;
+}
+
+.more-1 {
+    display: inline-block;
+    font-size: 12px;
+    color: #666666;
+    cursor: pointer;
+}
+
+.transport-type {
+    display: inline-block;
+    font-size: 16px;
+    color: #333333;
+    margin-right: 48px;
+}
+
+.International-logistics {
+    display: inline-block;
+}
+
+.International-logistics span {
+    width: 134px;
+    display: inline-block;
+    font-size: 14px;
+    color: #777777;
+    margin-right: 48px;
+}
+
+.trade span {
+    font-size: 14px;
+    color: #777777;
+}
+
+.clearance1 {
+    display: inline-block;
+    margin-right: 88px;
+}
+
+.clearance1-c {
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.clearance1-c span {
+    font-size: 14px;
+    color: #777777;
+}
+
+#money table {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    padding: 16px 40px;
+    display: block;
+}
+
+#money table tr {
+    width: 100%;
+}
+
+#money table tr:last-of-type {
+    border-bottom: none;
+}
+
+#money table tr:nth-of-type(1) {
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #DDDDDD;
+    display: block;
+}
+
+#money table tr th {
+    width: 112px;
+    margin-right: 40px;
+    display: inline-block;
+}
+
+#money table tr th:nth-of-type(1) {
+    width: 120px;
+}
+
+#money table tr th:nth-of-type(3) {
+    width: 102px;
+}
+
+#money table tr th:nth-of-type(4) {
+    width: 114px;
+}
+
+#money table tr th:last-of-type {
+    margin-right: 0;
+    width: 100px;
+}
+
+.tab-tr {
+    width: 100%;
+    margin-top: 16px;
+    padding-bottom: 8px;
+    display: block;
+    border-bottom: 1px dashed #DDDDDD;
+}
+
+.tab-tr td {
+    width: 112px;
+    margin-right: 40px;
+    display: inline-block;
+}
+
+.tab-tr td:nth-of-type(1) {
+    width: 120px;
+
+}
+
+.tab-tr td:nth-of-type(3) {
+    width: 102px;
+
+}
+
+.tab-tr td:nth-of-type(4) {
+    width: 114px;
+
+}
+
+.tab-tr td:nth-of-type(5) {
+    color: #00aa5c;
+}
+
+.tab-tr td:nth-of-type(5) span {
+    color: #333333;
+}
+
+.tab-tr td:last-of-type {
+    margin-right: 0;
+}
+
+.tab-tr td:last-of-type input {
+    width: 90px;
+    background: #fff;
+    height: 36px;
+    border: 1px solid #DDDDDD;
+    padding-left: 5px;
+}
+
+.tab-tr td:last-of-type span {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.contract1 {
+    width: 140px;
+    height: 102px;
+}
+
+.contract1 img {
+    display: block;
+    border: 1px solid #999;
+}
+
+.contractx {
+    display: inline-block;
+    margin-right: 56px;
+}
+
+.contractx > span {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#money_list > span {
+    margin-right: 120px;
+}
+
+.order-type .contract3 {
+    margin-right: 120px
+}
+
+#money_list table tr {
+    padding-bottom: 10px;
+    display: block;
+    border-bottom: 1px dashed #DDDDDD;
+    margin-top: 10px;
+}
+
+#money_list table {
+    width: 780px;
+    border: 1px solid #DDDDDD;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 16px 40px;
+    margin-bottom: 10px;
+    margin-right: 3px;
+}
+
+#money_list table th {
+    width: 120px;
+    margin-right: 56px;
+    display: inline-block;
+}
+
+#money_list table th:nth-of-type(4) {
+    margin-right: 0;
+}
+
+#money_list table td {
+    width: 120px;
+    margin-right: 56px;
+    display: inline-block;
+}
+
+#money_list table td input {
+    width: 114px;
+    height: 36px;
+    border: 1px solid #DDDDDD;
+    padding-left: 10px;
+}
+
+#money_list table td span {
+    display: inline-block;
+}
+
+#money_list table tr td:nth-of-type(3) {
+    width: 135px;
+}
+
+#money_list table tr td:nth-of-type(4) {
+    width: 135px;
+    margin-right: 0;
+}
+
+#money_list table tr:last-of-type {
+    border-bottom: none;
+}
+
+#money_list #info {
+    font-size: 12px;
+    color: #ff4848;
+    margin-left: 190px;
+    margin-top: 10px;
+    display: block;
+}
+
+.cancel-btn {
+    text-align: center;
+    border-bottom: 80px;
+}
+
+#cancel-btn {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 192px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #00aa5c;
+    color: #00aa5c;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#cancel-btn:hover {
+    transition: all .5s;
+    background: #00aa5c;
+    color: #fff;
+}
+
+/*maks*/
+.mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all .5s;
+    background: rgba(0, 0, 0, .4);
+    z-index: 50;
+    display: none;
+}
+
+#inform-1 {
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    margin: 250px auto;
+    border-radius: 10px;
+}
+
+#inform-1 .info {
+    font-size: 20px;
+    color: #00aa5c;
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+    line-height: 5;
+}
+
+#inform-1 .can-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#inform-1 .can-btn button {
+    width: 60px;
+    height: 30px;
+    background: #00aa5c;
+    color: #fff;
+    border-radius: 5px;
+
+}
+
+#btn-1 {
+    margin-right: 20px;
+}
+
+/*收件人弹出框*/
+#select_list {
+    margin-top: 16px;
+    width: 470px;
+    /*height: 176px;*/
+    border: 1px solid #DDDDDD;
+    padding: 16px 40px;
+    padding-bottom: 0;
+    font-size: 14px;
+    color: #999999;
+    position: absolute;
+    right: 253px;
+    top: 15px;
+    z-index: 99;
+    background: rgb(235, 248, 242);
+    border-radius: 8px;
+    display: none;
+}
+
+#select_list li {
+    margin-bottom: 10px;
+}
+
+#select_list span {
+    width: 80px;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.country {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.province {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.xian {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+#select_list_2 {
+    margin-top: 16px;
+    width: 470px;
+    /*height: 176px;*/
+    border: 1px solid #DDDDDD;
+    padding: 16px 40px;
+    padding-bottom: 0;
+    font-size: 14px;
+    color: #999999;
+    position: absolute;
+    right: 62px;
+    top: 72px;
+    z-index: 99;
+    background: rgb(235, 248, 242);
+    border-radius: 8px;
+    display: none;
+}
+
+#select_list_2 li {
+    margin-bottom: 10px;
+}
+
+#select_list_2 span {
+    width: 80px;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.country {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.province {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.xian {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.deliveryAddress{
+    position: relative;
+}
+
+.cost div{
+    display: inline-block;
+}
+#cost_1{
+    font-weight: bold;
+    margin-right: 65px;
+    font-family: Arial;
+}
+#cost_2{
+    font-weight: bold;
+}
+
+.settlement_1{
+    display: inline-block;
+}
+.settlement_1>div{
+    margin-bottom: 10px;
+}
+#settlement_1{
+    font-weight: bold;
+}
+#settlement_2{
+    font-weight: bold;
+}
+.settlement_1 .info{
+    margin-left: 30px;
+    font-size: 12px;
+    color: #ff4848;
+}
+
+/*.cost{*/
+    /*display: none;*/
+/*}*/
+
+/*.settlement{*/
+    /*display: none;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

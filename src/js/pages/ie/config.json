@@ -1,0 +1,5 @@
+{
+  "dependencies": [
+    "src/js/pages/ie/*.js"
+	]
+}
