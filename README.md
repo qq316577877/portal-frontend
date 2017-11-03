@@ -34,3 +34,8 @@ $gulp deploy-production
 ```  
 
 注意：本目录下的plugin文件夹，在项目部署时，与js和assets文件夹放在一起。（页面用到了）
+
+
+
+
+
